@@ -9,7 +9,7 @@ categories: ["tech"]
 Install Hugo with Even theme
 
 Create a new site named is as chaos in my case.
-```
+```bash
 $ cd ~/Hugo/Site
 $ hugo new site chaos
 Congratulations! Your new Hugo site is created in /home/dyiwu/Hugo/Site/chaos.
@@ -27,14 +27,14 @@ Visit https://gohugo.io/ for quickstart guide and full documentation.
 ```
 
 Install even theme
-```
+```bash
 $ cd ~/Hugo/Site/chaos
 $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 $ cp themes/even/exampleSite/config.toml .
 ```
 
 Update theme
-```
+```bash
 $ cd ~/Hugo/Site/chaos/themes/even
 $ git pull
 ```
@@ -43,12 +43,12 @@ Deploy to github
 1. Create two repostories on github, named it as chaos and dyiwu.github.io
 2. Generate the web site which will be saved under ~/Hugo/Site/chaos/public directory.
 
-    ```
+    ```bash
     $ cd ~/Hugo/Site/chaos
     $ hugo
     ```
 3. link the generated web site (/public) folder to github
-    ```
+    ```bash
     $ cd ~/Hugo/Site/chaos/public
     $ git init
     $ git remote add origin https://github.com/dyiwu/dyiwu.github.io.git
@@ -57,7 +57,7 @@ Deploy to github
     $ git push -u origin master
     ```
 4.  Link the whole chaos site to github
-    ```
+    ```bash
     $ cd ~/Hugo/Site/chaos
     $ git init
     $ git remote add origin https://github.com/dyiwu/chaos.git
@@ -70,7 +70,7 @@ Deploy to github
 Maintance scripts
 
 1.  Script to deploy chaos.git repo from local to github
-```
+```bash
 $ cat deploy_chaos.sh 
 #!/bin/bash
 echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos updates to GitHub...\033[0m"
@@ -87,7 +87,7 @@ git commit -m "$msg"
 git push origin master
 ```
 2.  Script to deploy dyiwu.github.io.git from local to github
-```
+```bash
 $ cat deploy_public.sh
 #!/bin/bash
 echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos/public updates to GitHub...\033[0m"
@@ -111,7 +111,7 @@ cd ..
 ```
 
 3.  Script to clone chaos.git repo from github to local
-```
+```bash
 $ cat clone_chaos.sh 
 #!/bin/bash
 echo -e "\033[0;32mClone chaos.git repo from GitHub to local...\033[0m"
@@ -121,7 +121,7 @@ cd chaos
 ```
 
 4. Script to clone dyiwu.github.io.git repo from github to local
-```
+```bash
 $ cat clone_public.sh 
 #!/bin/bash
 echo -e "\033[0;32mClone dyiwu.github.io.git repo from GitHub to local...\033[0m"
@@ -130,4 +130,10 @@ cd ~/Hugo/Site/chaos
 git clone https://github.com/dyiwu/dyiwu.github.io.git public
 ```
 
-
+5. Script to clone themes/even repo from github to local
+```bash
+$ cat clone_themes.sh 
+#!/bin/bash
+$ cd ~/Hugo/Site/chaos
+$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+```
