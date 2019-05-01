@@ -8,7 +8,7 @@ categories: ["tech"]
 
 Install Hugo with Even theme
 
-Create a new site named is as chaos in my case.
+Create a new site named it as chaos in my case.
 ```
 $ cd ~/Hugo/Site
 $ hugo new site chaos
