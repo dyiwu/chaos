@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "\033[0;32mClone chaos.git repo from GitHub to local...\033[0m"
-cd ~/Hugo/Site
+echo -e "Clone chaos.git repo from GitHub to local..."
+cd ~/Hugo/Sites
 git clone https://github.com/dyiwu/chaos.git
 cd chaos

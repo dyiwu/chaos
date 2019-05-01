@@ -1,7 +1,7 @@
 #!/bin/bash
-echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos/public updates to GitHub...\033[0m"
+echo -e "Deploying ~/Hugo/Sites/chaos/public updates to GitHub..."
 # Build the project.
-cd ~/Hugo/Site/chaos
+cd ~/Hugo/Sites/chaos
 hugo
 # Go To Public folder
 cd public

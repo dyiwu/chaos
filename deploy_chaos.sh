@@ -1,6 +1,6 @@
 #!/bin/bash
-echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos updates to GitHub...\033[0m"
-cd ~/Hugo/Site/chaos
+echo -e "Deploying ~/Hugo/Sites/chaos updates to GitHub..."
+cd ~/Hugo/Sites/chaos
 # Add changes to git.
 git add -A
 # Commit changes.
