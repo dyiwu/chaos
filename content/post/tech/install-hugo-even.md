@@ -10,9 +10,9 @@ Install Hugo with Even theme
 
 Create a new site named it as chaos in my case.
 ```
-$ cd ~/Hugo/Site
+$ cd ~/Hugo/Sites
 $ hugo new site chaos
-Congratulations! Your new Hugo site is created in /home/dyiwu/Hugo/Site/chaos.
+Congratulations! Your new Hugo site is created in /home/dyiwu/Hugo/Sites/chaos.
 
 Just a few more steps and you're ready to go:
 
@@ -28,28 +28,28 @@ Visit https://gohugo.io/ for quickstart guide and full documentation.
 
 Install even theme
 ```
-$ cd ~/Hugo/Site/chaos
+$ cd ~/Hugo/Sites/chaos
 $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 $ cp themes/even/exampleSite/config.toml .
 ```
 
 Update theme
 ```
-$ cd ~/Hugo/Site/chaos/themes/even
+$ cd ~/Hugo/Sites/chaos/themes/even
 $ git pull
 ```
 Deploy to github
 
 1. Create two repostories on github, named it as chaos and dyiwu.github.io
-2. Generate the web site which will be saved under ~/Hugo/Site/chaos/public directory.
+2. Generate the web site which will be saved under ~/Hugo/Sites/chaos/public directory.
 
     ```
-    $ cd ~/Hugo/Site/chaos
+    $ cd ~/Hugo/Sites/chaos
     $ hugo
     ```
 3. link the generated web site (/public) folder to github
     ```
-    $ cd ~/Hugo/Site/chaos/public
+    $ cd ~/Hugo/Sites/chaos/public
     $ git init
     $ git remote add origin https://github.com/dyiwu/dyiwu.github.io.git
     $ git add .
@@ -58,7 +58,7 @@ Deploy to github
     ```
 4.  Link the whole chaos site to github
     ```
-    $ cd ~/Hugo/Site/chaos
+    $ cd ~/Hugo/Sites/chaos
     $ git init
     $ git remote add origin https://github.com/dyiwu/chaos.git
     $ git add .
@@ -73,8 +73,8 @@ Maintance scripts
 ```
 $ cat deploy_chaos.sh 
 #!/bin/bash
-echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos updates to GitHub...\033[0m"
-cd ~/Hugo/Site/chaos
+echo -e "Deploying ~/Hugo/Sites/chaos updates to GitHub..."
+cd ~/Hugo/Sites/chaos
 # Add changes to git.
 git add -A
 # Commit changes.
@@ -90,9 +90,9 @@ git push origin master
 ```
 $ cat deploy_public.sh
 #!/bin/bash
-echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos/public updates to GitHub...\033[0m"
+echo -e "Deploying ~/Hugo/Sites/chaos/public updates to GitHub..."
 # Build the project.
-cd ~/Hugo/Site/chaos
+cd ~/Hugo/Sites/chaos
 hugo
 # Go To Public folder
 cd public
@@ -114,8 +114,8 @@ cd ..
 ```
 $ cat clone_chaos.sh 
 #!/bin/bash
-echo -e "\033[0;32mClone chaos.git repo from GitHub to local...\033[0m"
-cd ~/Hugo/Site
+echo -e "Clone chaos.git repo from GitHub to local..."
+cd ~/Hugo/Sites
 git clone https://github.com/dyiwu/chaos.git
 cd chaos
 ```
@@ -124,9 +124,9 @@ cd chaos
 ```
 $ cat clone_public.sh 
 #!/bin/bash
-echo -e "\033[0;32mClone dyiwu.github.io.git repo from GitHub to local...\033[0m"
+echo -e "Clone dyiwu.github.io.git repo from GitHub to local..."
 # Build the project.
-cd ~/Hugo/Site/chaos
+cd ~/Hugo/Sites/chaos
 git clone https://github.com/dyiwu/dyiwu.github.io.git public
 ```
 
@@ -134,6 +134,6 @@ git clone https://github.com/dyiwu/dyiwu.github.io.git public
 ```
 $ cat clone_themes.sh 
 #!/bin/bash
-$ cd ~/Hugo/Site/chaos
+$ cd ~/Hugo/Sites/chaos
 $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 ```
