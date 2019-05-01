@@ -1,0 +1,133 @@
+---
+title: "Install Hugo with Even theme"
+date: 2019-05-01T14:53:00+08:00
+draft: false
+tags: ["hugo", "even", "setup"]
+categories: ["tech"]
+---
+
+Install Hugo with Even theme
+
+Create a new site named is as chaos in my case.
+```
+$ cd ~/Hugo/Site
+$ hugo new site chaos
+Congratulations! Your new Hugo site is created in /home/dyiwu/Hugo/Site/chaos.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/, or
+   create your own with the "hugo new theme <THEMENAME>" command.
+2. Perhaps you want to add some content. You can add single files
+   with "hugo new <SECTIONNAME>/<FILENAME>.<FORMAT>".
+3. Start the built-in live server via "hugo server".
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+```
+
+Install even theme
+```
+$ cd ~/Hugo/Site/chaos
+$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+$ cp themes/even/exampleSite/config.toml .
+```
+
+Update theme
+```
+$ cd ~/Hugo/Site/chaos/themes/even
+$ git pull
+```
+Deploy to github
+
+1. Create two repostories on github, named it as chaos and dyiwu.github.io
+2. Generate the web site which will be saved under ~/Hugo/Site/chaos/public directory.
+
+    ```
+    $ cd ~/Hugo/Site/chaos
+    $ hugo
+    ```
+3. link the generated web site (/public) folder to github
+    ```
+    $ cd ~/Hugo/Site/chaos/public
+    $ git init
+    $ git remote add origin https://github.com/dyiwu/dyiwu.github.io.git
+    $ git add .
+    $ git commit -m "Initial commit"
+    $ git push -u origin master
+    ```
+4.  Link the whole chaos site to github
+    ```
+    $ cd ~/Hugo/Site/chaos
+    $ git init
+    $ git remote add origin https://github.com/dyiwu/chaos.git
+    $ git add .
+    $ git commit -m "Initial commit"
+    $ git push -u origin master
+    ```
+5. Web site will hosted on Github as https://dyiwu.github.io/
+
+Maintance scripts
+
+1.  Script to deploy chaos.git repo from local to github
+```
+$ cat deploy_chaos.sh 
+#!/bin/bash
+echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos updates to GitHub...\033[0m"
+cd ~/Hugo/Site/chaos
+# Add changes to git.
+git add -A
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+# Push source and build repos.
+git push origin master
+```
+2.  Script to deploy dyiwu.github.io.git from local to github
+```
+$ cat deploy_public.sh
+#!/bin/bash
+echo -e "\033[0;32mDeploying ~/Hugo/Site/chaos/public updates to GitHub...\033[0m"
+# Build the project.
+cd ~/Hugo/Site/chaos
+hugo
+# Go To Public folder
+cd public
+# Add changes to git.
+git add -A
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+# Push source and build repos.
+git push origin master
+# Come Back
+cd ..
+```
+
+3.  Script to clone chaos.git repo from github to local
+```
+$ cat clone_chaos.sh 
+#!/bin/bash
+echo -e "\033[0;32mClone chaos.git repo from GitHub to local...\033[0m"
+cd ~/Hugo/Site
+git clone https://github.com/dyiwu/chaos.git
+cd chaos
+```
+
+4. Script to clone dyiwu.github.io.git repo from github to local
+```
+$ cat clone_public.sh 
+#!/bin/bash
+echo -e "\033[0;32mClone dyiwu.github.io.git repo from GitHub to local...\033[0m"
+# Build the project.
+cd ~/Hugo/Site/chaos
+git clone https://github.com/dyiwu/dyiwu.github.io.git public
+```
+
+
