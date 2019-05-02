@@ -204,4 +204,4 @@ copyright = ""            # default: author.name ↓        # 預設為下麵配
 #  taxonomyTerm = ["HTML"]
 
 [permalinks]
-    post = "/:year/:month/:filename/"
+    pos = "/:year/:month/:filename/"

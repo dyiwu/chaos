@@ -8,7 +8,8 @@ categories: ["tech"]
 
 Install Hugo with Even theme
 
-Create a new site named it as chaos in my case.
+## Create a new site named it as chaos in my case.
+<!--more--> 
 ```
 $ cd ~/Hugo/Sites
 $ hugo new site chaos
@@ -26,19 +27,19 @@ Just a few more steps and you're ready to go:
 Visit https://gohugo.io/ for quickstart guide and full documentation.
 ```
 
-Install even theme
+## Install even theme
 ```
 $ cd ~/Hugo/Sites/chaos
 $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 $ cp themes/even/exampleSite/config.toml .
 ```
 
-Update theme
+## Update theme
 ```
 $ cd ~/Hugo/Sites/chaos/themes/even
 $ git pull
 ```
-Deploy to github
+## Deploy to github
 
 1. Create two repostories on github, named it as chaos and dyiwu.github.io
 2. Generate the web site which will be saved under ~/Hugo/Sites/chaos/public directory.
@@ -67,7 +68,7 @@ Deploy to github
     ```
 5. Web site will hosted on Github as https://dyiwu.github.io/
 
-Maintance scripts
+## Maintance scripts
 
 1.  Script to deploy chaos.git repo from local to github
 ```
@@ -144,4 +145,15 @@ $ cat update_theme.sh
 #!/bin/bash
 cd ~/Hugo/Sites/chaos/themes/even
 git pull
+```
+
+## Customization and Tips
+
+- Manual Summary Splitting  
+  Add the `<!--more-->` summary divider where you want to split the article.
+
+- Setup Permlinks in config.toml
+```
+[permalinks]
+    post = "/:year/:month/:filename/"
 ```
