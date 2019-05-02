@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System panic with Illegal instruction trap
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -161,5 +161,4 @@ cpu type  timeinval          interval timer     secs:ticks od  0,4  0,4  I
 1   PANIC 0x14cc3bb49e59     0x14cc3b0b52c6          0:2   8   1 0  0 0  1 
 2   TOC   0x14d43a3ee037     0x14d43a106950          0:0   0   1 1  0 0  1 
 3   TOC   0x14d4390d78aa     0x14d438de77ad          0:0   0   1 1  0 0  1 
-
-{{< /highlight >}}
+```

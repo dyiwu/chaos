@@ -9,8 +9,7 @@ categories = ["tech"]
 ## System panic with Panic string : Spinlock deadlock!
 clock interrupts held off for approx 120 seconds.
 
-{{< highlight html "linenos=inline" >}}
-
+```
 System crash dump analysis report
 =================================
 Symptom
@@ -366,5 +365,4 @@ TID     PID   PPID  TICKS      PRI  SPU BND GRP SYSCALL        COMMAND
 556     519   1     11862      154  1   N   -1  select         syslogd        
 
 Note:  There is 1 thread in TSZOMB stat !
-
-{{< /highlight >}}
+```

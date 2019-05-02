@@ -18,8 +18,7 @@ data address by one which results in an odd byte aligned address.
 Later, when this address was  accessed, the system panicked with an
 alignment fault.
 
-{{< highlight html "linenos=inline" >}}
-
+```
 System crash dump analysis report
 =================================
 
@@ -202,5 +201,4 @@ in phase mismatch.  The phase mismatch handler in the driver adjusts the
 data address by one which results in an odd byte aligned address.
 Later, when this address was  accessed, the system panicked with an
 alignment fault.
-
-{{< /highlight >}}
+```

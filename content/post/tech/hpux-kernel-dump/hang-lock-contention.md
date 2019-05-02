@@ -11,7 +11,7 @@ cpu in system mode as seen using a performance monitoring
 tool.  This has been observed in a system under high
 memory pressure while starting up a large database application.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -268,4 +268,4 @@ This problem has been resolved by patch PHKL_27825. Its latest replacement
 patch is PHKL_36133. I would suggest that the customer install PHKL_36133
 to address this problem.
 
-{{< /highlight >}}
+```

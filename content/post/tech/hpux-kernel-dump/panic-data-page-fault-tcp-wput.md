@@ -9,7 +9,7 @@ categories = ["tech"]
 ## Data page fault panic. 
 A null pointer de-reference on tcp_wput() routine.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -156,4 +156,4 @@ SR5=0x009af000
 0x400003ffffff0dd8 0x00150918 syscall+0x750
 0x400003ffffff0c78 0x00033f64 syscallinit+0x55c
 
-{{< /highlight >}}
+```

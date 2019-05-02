@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## Monarch processor have had clock interrupts held off
 
-{{< highlight html "linenos=inline" >}}
+```
 
             System crash dump analysis report
             =================================
@@ -226,4 +226,4 @@ Start              End
 0x0000000000000000-0x000000007fffffff
 0x0000000180000000-0x00000001bfffffff
 
-{{< /highlight >}}
+```

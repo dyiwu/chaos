@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## Application fail to start with 'bind address failure' error message.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 Symptom
 -------
@@ -220,4 +220,4 @@ y in use
 1      06/12/25 15:14:17 [error] initial x.25 server failure
 1      06/12/25 15:14:17 [notice] edilink system stop
 
-{{< /highlight >}}
+```

@@ -10,7 +10,7 @@ categories = ["tech"]
 Bus Check[0] - A hard fail response was detected in data on the front
 side bus (FSB)."
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -110,4 +110,4 @@ MCA[0]:tr:1 dr:1 pc:1 cr:1 ex:0 cm:0 rs:1 in:0
 MCA[0]:dy:0 pm:0 pi:0 mi:1 tl:0 hd:0 us:0 ci:1
 MCA[0]:co:0 sy:0 mn:1 me:1 ra:0 rz:0
 
-{{< /highlight >}}
+```

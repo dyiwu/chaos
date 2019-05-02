@@ -12,7 +12,7 @@ NFSv3 server nfsktcpd (multi-threaded nfs/tcp server kernel daemon)
 takes much CPU times and following MC/SG TOC system due to safety timer
 timedout.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -347,4 +347,4 @@ fsstat                  fsinfo                  pathconf
 669 0%                  0 0%                    0 0%                    
 commit                  
 0 0%                    
-{{< /highlight >}}
+```

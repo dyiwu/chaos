@@ -9,7 +9,7 @@ categories = ["tech"]
 ## I-Cache Parity Error on CPU 3
 Spinlock deadlock failure with LPMC I-cache errors CPU 3 failure.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System Crash Dump Analysis Report
 =================================
@@ -219,4 +219,4 @@ approx 60 seconds. Current SPL = 0xc700000000000000 (SPL6+CLOCK_RESYNC).
 WARNING: Processor 3 appears to have had clock interrupts held off for 
 approx 60 seconds. Current SPL = 0xc600000000000000 (SPL6).
 
-{{< /highlight >}}
+```

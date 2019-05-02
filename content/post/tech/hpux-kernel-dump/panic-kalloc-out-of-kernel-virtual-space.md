@@ -8,8 +8,7 @@ categories = ["tech"]
 +++
 ## System panic with kalloc: out of kernel virtual space.
 
-{{< highlight html "linenos=inline" >}}
-
+```
             System crash dump analysis report
             =================================
 
@@ -283,4 +282,4 @@ There is not a single page available!
 
 The sysmap is sized for a maximum of 23328 entries
 
-{{< /highlight >}}
+```

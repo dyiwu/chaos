@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System hang with process looping in soaccept().
 
-{{< highlight html "linenos=inline" >}}
+```
 
             System crash dump analysis report
             =================================
@@ -472,4 +472,4 @@ TID     PID   PPID  TICKS      PRI SPU BND GRP SYSCALL        COMMAND
 12102   10218 10217 402087     178 0   N   0   open           perf.sh        
 12042   10201 10200 409727     178 0   N   0   open           login          
 
-{{< /highlight >}}
+```

@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## Panic string as Unresolved kernel interruption.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System Crash Dump Analysis Report
 =================================
@@ -218,4 +218,4 @@ Page layout:
  obj end   :                   0xe00000018addcfb8
  objs end  :                   0xe00000018addcfb8
 
-{{< /highlight >}}
+```

@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System panic due to 2 bits flipped on CPU
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -145,4 +145,4 @@ p4> Let -b 0xa
 
 // 2 bits flipped. a bit unusual.
 
-{{< /highlight >}}
+```

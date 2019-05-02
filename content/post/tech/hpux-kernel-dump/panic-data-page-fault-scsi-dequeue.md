@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System panics with data page fault in scsi_dequeue.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 
 System crash dump analysis report
@@ -232,4 +232,4 @@ q4> print -x addrof av_forw av_back b_dev b_flags
         io_forw.c $Date: 1999/05/10 00:33:25 $Revision: 
         r11ros/cup_ros_ep3_pb/2 PATCH_11.00 (PHKL_18543)
 
-{{< /highlight >}}
+```

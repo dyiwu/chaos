@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System hang in the LVM POWERFAIL queue.
   
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -473,4 +473,4 @@ fifo_rdwr()                                        3      2547529752 980865
 streams_getmsg()                                   2      190622811  190621512 
 vx_sleep_lock()                                    2      1011346    1011327   
 
-{{< /highlight >}}
+```

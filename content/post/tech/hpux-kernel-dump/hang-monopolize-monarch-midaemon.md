@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System hang due to midaemon is monopolizing the monarch.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -83,4 +83,4 @@ mideamon that is monopolizing CPU0. All processes that are still waiting
 on CPU 0 are mandatory bound to that CPU. It looks like a defect in
 midemon code.
 
-{{< /highlight >}}
+```

@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## MC/SG TOC system due to MC/ServiceGuard daemon cmcld aborted.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -77,5 +77,5 @@ drwxr-xr-x   2 bin        bin             96 Aug  8  2000 sharedtape
 localhost-root:/var/tombstones# file /var/adm/cmcluster/core
 /var/adm/cmcluster/core:        core file from 'cmcld' - received SIGABRT
 
-{{< /highlight >}}
+```
 

@@ -7,7 +7,7 @@ categories = ["tech"]
 +++
 ## MC/SG TOC system due to SCSI I/O time out.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -136,4 +136,4 @@ Total Spare PVs in use      0
   Free PE                     0
   Autoswitch                  On
 
-{{< /highlight >}}
+```

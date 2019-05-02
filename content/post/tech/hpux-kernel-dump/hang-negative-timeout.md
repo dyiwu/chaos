@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## mpt driver timeout call with negative time.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -374,4 +374,4 @@ sigsuspend()                                       2      14719525   32
 vx_event_wait()                                    2      14698159   59
 cv_sleep()                                         2      37953      8729
 
-{{< /highlight >}}
+```

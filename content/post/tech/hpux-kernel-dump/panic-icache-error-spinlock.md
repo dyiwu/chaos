@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## I-cache errors lead spinlock deadlock
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -131,4 +131,4 @@ path_info   :  0x0
 resp_addr   :  0x0       
 req_addr    :  0x0       
 
-{{< /highlight >}}
+```

@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System panic due to uninitialized variable
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -161,4 +161,4 @@ RR4=0x565b1831  RR5=0x00ffff31  RR6=0x00ffff31  RR7=0x00dead31
 +-------------  TRAP  ----------------------------
 Note: Trapped in user mode.
 
-{{< /highlight >}}
+```

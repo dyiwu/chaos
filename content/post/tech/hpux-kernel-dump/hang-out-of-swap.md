@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System hang due to NFS server down and out of swap space.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -864,4 +864,4 @@ PHNE_17586	PHNE_18272	PHNE_18409	PHNE_18878	PHNE_18972
 PHNE_19081	PHNE_19754	PHNE_19899	PHNE_20431	PHNE_21257
 PHNE_27393	PHNE_27788	
 
-{{< /highlight >}}
+```

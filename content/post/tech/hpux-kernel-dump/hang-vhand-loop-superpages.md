@@ -9,7 +9,7 @@ categories = ["tech"]
 +++
 ## Vhand run in a loop to unlock a superpage and monopolizes the cpu for a while.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -2377,4 +2377,4 @@ PHNE_24211	PHNE_24473	PHNE_24492	PHNE_24506	PHNE_24910
 PHNE_25083	PHNE_25388	PHNE_25627	PHNE_25644	PHNE_26326
 PHNE_26710	PHNE_26728	PHNE_26939	PHNE_27218	
 
-{{< /highlight >}}
+```

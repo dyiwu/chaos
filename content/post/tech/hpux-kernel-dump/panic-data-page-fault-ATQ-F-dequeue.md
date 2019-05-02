@@ -9,7 +9,7 @@ categories = ["tech"]
 ## Data page fault panic
 data page fault in ATQ_F_dequeue routine
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System Crash Dump Analysis Report
 =================================
@@ -428,4 +428,4 @@ streams_getmsg()                                   3      666423197  666422158
 pm_sigwait()                                       3      15084      66        
 locked()                                           2      305846     305164    
 
-{{< /highlight >}}
+```

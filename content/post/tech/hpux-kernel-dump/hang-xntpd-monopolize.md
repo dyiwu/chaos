@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## Time services process xnptd monopolize CPU 0 in kernel mode.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -233,4 +233,4 @@ TID     PID   PPID  RUN        IDLE       PRI SPU STATE S MIGR       FR LO AL CO
                                0              3   IDLE  N 212        0  0  0  
 JAGae26628
 
-{{< /highlight >}}
+```

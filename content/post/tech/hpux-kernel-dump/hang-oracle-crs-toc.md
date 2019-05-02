@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## Oracle CRS initiated INIT on cpu 2
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System Crash Dump Analysis Report
 =================================
@@ -71,4 +71,4 @@ Process list of init.cssd as below,
 7684    5669  1     489386507 158  16  SLEEP waitpid        init.cssd
                                              wait1(0xe00000019545e000)
 
-{{< /highlight >}}
+```

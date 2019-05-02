@@ -7,7 +7,7 @@ categories = ["tech"]
 +++
 ## Application hang with slow login on console access.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -532,4 +532,4 @@ nbpg: 4096 bytes
                                         pages / bytes   pages / bytes
                                Total:  205291  801.9m  523987    2.0g 
 
-{{< /highlight >}}
+```

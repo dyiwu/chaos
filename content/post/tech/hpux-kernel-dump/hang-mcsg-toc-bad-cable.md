@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## MC/SG TOC system due to bad cable.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -201,4 +201,4 @@ btlan3: WARNING: AUI Loopback Failed at 0/0/0/0....
 MC/ServiceGuard: Unable to maintain contact with cmcld daemon.
 Performing TOC to ensure data integrity.
 
-{{< /highlight >}}
+```

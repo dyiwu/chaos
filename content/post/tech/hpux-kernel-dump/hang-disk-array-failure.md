@@ -8,7 +8,7 @@ categories = ["tech"]
 +++
 ## System hang wit disk array failure.
 
-{{< highlight html "linenos=inline" >}}
+```
 
 System crash dump analysis report
 =================================
@@ -123,4 +123,4 @@ Total Spare PVs in use      0
    Free PE                     0
    Autoswitch                  On
 
-{{< /highlight >}}
+```

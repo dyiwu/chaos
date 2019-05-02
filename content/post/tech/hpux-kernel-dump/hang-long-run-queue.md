@@ -11,7 +11,7 @@ categories = ["tech"]
 Midaemon daemon process was spining in user space, which
 monopolized the SPU, leads system mini-hang.
   
-{{< highlight html "linenos=inline" >}}
+```
 
 System Crash Dump Analysis Report
 =================================
@@ -1128,4 +1128,5 @@ AL: Alpha semaphores misses (special scheduling when miss a sema).
      2       2 128   1     0        0         0         0        0  0x3fc1bbea vhand
      1       1 168   1     0        0         0         0        0  0x3fc1bbeb init
      0       0 128   1     0        0         0         0        0  0x3fc1bbea swapper
-{{< /highlight >}}
+
+```

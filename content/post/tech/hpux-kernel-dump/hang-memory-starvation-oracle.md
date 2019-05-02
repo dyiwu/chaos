@@ -10,7 +10,7 @@ categories = ["tech"]
 System went to memory starvation situation regarding stale shared
  memory segment does not released.
 
-{{< highlight html "linenos=inline" >}}
+```
 
             System crash dump analysis report
             =================================
@@ -419,4 +419,4 @@ pm_sigwait()                                       2      33628219   48
 streams_getmsg()                                   2      110796     110182    
 sigsuspend()                                       2      26714      93        
 
-{{< /highlight >}}
+```
