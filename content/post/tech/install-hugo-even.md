@@ -137,3 +137,11 @@ $ cat clone_themes.sh
 $ cd ~/Hugo/Sites/chaos
 $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 ```
+
+6. Script to update themes/even
+```
+$ cat update_theme.sh 
+#!/bin/bash
+cd ~/Hugo/Sites/chaos/themes/even
+git pull
+```
