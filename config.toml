@@ -18,7 +18,9 @@ hasCJKLanguage = false     # has chinese/japanese/korean ? # 自動檢測是否�
 paginate = 5                                              # 首頁每頁顯示的文章數
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = ""            # default: author.name ↓        # 預設為下麵配置的author.name ↓
+copyright = 'Dyi-Wu Liu <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>'
+
+# default: author.name ↓        # 預設為下麵配置的author.name ↓
 
 [author]                  # essential                     # 必需
   name = "Dyi-Wu Liu "
@@ -92,7 +94,8 @@ copyright = ""            # default: author.name ↓        # 預設為下麵配
 
   postMetaInFooter = false   # contain author, lastMod, markdown link, license           # 包含作者，上次修改時間，markdown連結，許可資訊
   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 連結到markdown原始檔（僅當允許hugo生成markdown檔時有效）
-  contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 暢言
   changyanAppkey = ""       # Changyan app key
@@ -162,21 +165,21 @@ copyright = ""            # default: author.name ↓        # 預設為下麵配
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付寶二維碼
 
   [params.social]                                         # 社交連結
-    a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
-    d-facebook = "http://localhost:1313"
-    e-linkedin = "http://localhost:1313"
-    f-google = "http://localhost:1313"
-    g-github = "http://localhost:1313"
-    h-weibo = "http://localhost:1313"
-    i-zhihu = "http://localhost:1313"
-    j-douban = "http://localhost:1313"
-    k-pocket = "http://localhost:1313"
-    l-tumblr = "http://localhost:1313"
-    m-instagram = "http://localhost:1313"
-    n-gitlab = "http://localhost:1313"
-    o-bilibili = "http://localhost:1313"
+    a-email = "mailto:dyiwu.liu@gmail.com"
+#    b-stack-overflow = "http://localhost:1313"
+#    c-twitter = "http://localhost:1313"
+#    d-facebook = "http://localhost:1313"
+#    e-linkedin = "http://localhost:1313"
+#    f-google = "http://localhost:1313"
+#    g-github = "http://localhost:1313"
+#    h-weibo = "http://localhost:1313"
+#    i-zhihu = "http://localhost:1313"
+#    j-douban = "http://localhost:1313"
+#    k-pocket = "http://localhost:1313"
+#    l-tumblr = "http://localhost:1313"
+#    m-instagram = "http://localhost:1313"
+#    n-gitlab = "http://localhost:1313"
+#    o-bilibili = "http://localhost:1313"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
