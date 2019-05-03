@@ -8,3 +8,4 @@ categories = ["bookmark"]
 大腕、網紅的網站。
 <!--more-->
 - [零壹軒筆記](https://note.qidong.name/)
+- [宋淨超](https://jimmysong.io/)
