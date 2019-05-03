@@ -6,7 +6,7 @@ draft: false
 tags: ["preview", "Theme preview", "tag-3"]
 categories: ["example-site"]
 
-weight: 10
+# weight: 10
 contentCopyright: MIT
 mathjax: true
 autoCollapseToc: true

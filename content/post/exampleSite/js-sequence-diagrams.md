@@ -61,6 +61,7 @@ See more information from https://github.com/bramp/js-sequence-diagrams.
 
 ## Examples
 
+
 ```sequence
 Title: Here is a title
 A->B: Normal line
