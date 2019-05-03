@@ -14,7 +14,7 @@ pygmentsCodefences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
 
-hasCJKLanguage = false     # has chinese/japanese/korean ? # 自動檢測是否包含 中文\日文\韓文
+hasCJKLanguage = true     # has chinese/japanese/korean ? # 自動檢測是否包含 中文\日文\韓文
 paginate = 5                                              # 首頁每頁顯示的文章數
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
@@ -167,11 +167,11 @@ copyright = 'Dyi-Wu Liu <a rel="license" href="http://creativecommons.org/licens
   [params.social]                                         # 社交連結
     a-email = "mailto:dyiwu.liu@gmail.com"
 #    b-stack-overflow = "http://localhost:1313"
-#    c-twitter = "http://localhost:1313"
-#    d-facebook = "http://localhost:1313"
-#    e-linkedin = "http://localhost:1313"
+    c-twitter = "https://twitter.com/dyiwu"
+    d-facebook = "https://www.facebook.com/dyiwu.liu"
+    e-linkedin = "https://linkedin.com/in/dyi-wu-liu-aaa4698"
 #    f-google = "http://localhost:1313"
-#    g-github = "http://localhost:1313"
+    g-github = "https://github.com/dyiwu"
 #    h-weibo = "http://localhost:1313"
 #    i-zhihu = "http://localhost:1313"
 #    j-douban = "http://localhost:1313"
