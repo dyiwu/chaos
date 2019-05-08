@@ -5,7 +5,7 @@ lastmod: 2017-08-30T01:53:34+08:00
 draft: false
 keywords: []
 description: ""
-tags: ["preview", "日本語", "tag-4"]
+tags: ["preview", "日本語"]
 categories: ["example-site"]
 author: "Wikipedia"
 

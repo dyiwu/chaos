@@ -54,6 +54,12 @@ biu biu biu.
 biu biu biu.
 {{% /admonition %}}
 
+```markdown
+{{%/* admonition info "info" */%}}
+biu biu biu.
+{{%/* /admonition */%}}
+```
+
 {{% admonition tip "tip" %}}
 biu biu biu.
 {{% /admonition %}}

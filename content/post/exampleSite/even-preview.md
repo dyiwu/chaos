@@ -3,7 +3,7 @@ title: "Theme preview"
 date: 2018-07-10T00:00:00+08:00
 lastmod: 2018-07-10T00:00:00+08:00
 draft: false
-tags: ["preview", "Theme preview", "tag-3"]
+tags: ["preview", "Theme preview"]
 categories: ["example-site"]
 
 # weight: 10
