@@ -6,11 +6,11 @@ categories: ["life"]
 
 toc: true
 ---
-### 以主力買超表爲基準選股
+### 以主力進出買賣超表爲基準選股
 <!--more-->
 
-- 先到主力進出排行網頁:[萬股網](https://www.wantgoo.com/stock/agentrank)、[富邦證券](https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm)
-- 進去以後會先看到當日淨買超排行，請直接點隔壁的累計15日淨買超。
+- 先到主力進出買賣超網頁:[萬股網](https://www.wantgoo.com/stock/agentrank)、[富邦證券](https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm)
+- 進去以後會先看到當日淨買超排行，請直接點隔壁的`累計15日淨買`。
 - 這時候就可以一支支點進去看，找有這三種特徵的股票：
     1. 走上升軌道，但是還沒連續長紅噴出的。
     2. 前波漲了一段，現在在盤整。
