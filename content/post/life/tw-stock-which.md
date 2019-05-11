@@ -1,7 +1,7 @@
 ---
 title: "臺股選股策略"
 date: 2019-05-09T01:49:05+08:00
-tags: ["財經","臺股"]
+tags: ["財經","臺股","選股"]
 categories: ["life"]
 ---
 {{% admonition info "warning" %}}
