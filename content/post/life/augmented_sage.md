@@ -4,21 +4,13 @@ date = 2019-03-31T13:33:54+08:00
 draft = false
 summary = "知者減半，省者全無。"
 
-# Tags and categories
-# For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
 tags = ["國學","修身","心靈雞湯"]
 categories = ["life"]
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-[image]
-  # Caption (optional)
-  caption = ""
-
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = ""
 +++
+水太清則無魚，人太緊則無智。 知者減半，省者全無。
+<!--more-->
+>這兩句話的意思是：「水如果太清澈了就不會有魚，人如果太急躁了就沒了智慧。知道這個道理的就會把心中過急的慾望減少一半，徹底省悟這個道理的心中就會全然沒有過急的慾望。」兩句各有各的意思，相互映襯，就是要告訴人們，心中不要有過急的慾望，要沉得住氣，這才是人生的大智慧。
+
 《增廣賢文》又名《昔時賢文》、《古今賢文》，是一部古訓集、民間諺語集。
 
 其內容匯集了為人處事的各類諺語，很有哲理性，釋道儒各方面的思想均有體現。
