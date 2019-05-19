@@ -14,5 +14,5 @@ _Even_ is a super concise theme for Hugo.
 ## <p class="tag-cloud" style="color:navy;margin-left:60px"><a>_**Ownership**_</a></p>
 <small><p class="tag-cloud" style="color:navy"><a>_Before honor comes humility. 15:33_</a></p></small>
 
-![Local Picture](/img/alone_800x500.jpg)
+<img src="alone_800x500.jpg">
 

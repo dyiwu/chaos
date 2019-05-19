@@ -5,6 +5,7 @@ outputs = ["Reveal"]
 date = 2019-05-16T21:15:41+08:00
 tags = ["reveal.js","hugo"]
 categories = ["talk"]
+layout = "bundle"
 
 [reveal_hugo]
 theme = "night"

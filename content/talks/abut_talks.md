@@ -3,13 +3,13 @@ title = "About talks"
 date = 2019-05-16T19:20:41+08:00
 tags = ["reveal.js","hugo"]
 categories = ["talk"]
-outputs = ["Reveal"]
+# outputs = ["Reveal"]
 
-[reveal_hugo]
-theme = "moon"
-highlight_theme = "solarized-dark"
-slide_number = true
-transition = "zoom"
+# [reveal_hugo]
+# theme = "moon"
+# highlight_theme = "solarized-dark"
+# slide_number = true
+# transition = "zoom"
 +++
 Here are tech talks, presentations etc.
 <!--more-->
@@ -21,6 +21,7 @@ date = 2019-05-16T19:20:41+08:00
 tags = ["reveal.js","hugo"]
 categories = ["talk"]
 outputs = ["Reveal"]
+layout = "bundle"
 
 [reveal_hugo]
 theme = "moon"
@@ -42,4 +43,7 @@ The folder structure would look like with one root presentation and one section 
     - body.md # appends to the ted talk presentation
     - conclusion.md # appends to the ted talk presentation
 ```
-[reveal-hugo theme](https://themes.gohugo.io/reveal-hugo/)
+Reference:
+
+- [reveal-hugo theme @ gohugo](https://themes.gohugo.io/reveal-hugo/)
+- [dzello/reveal-hugo @ github](https://github.com/dzello/reveal-hugo)

@@ -4,6 +4,7 @@ outputs = ["Reveal"]
 date = 2019-05-16T21:07:41+08:00
 tags = ["reveal.js","hugo"]
 categories = ["talk"]
+layout = "bundle"
 
 [logo]
 src = "github-logo.png"
