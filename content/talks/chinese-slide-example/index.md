@@ -1,5 +1,5 @@
 +++
-title = "Chinese slide test"
+title = "Chinese slide example"
 date = 2019-05-16T19:20:41+08:00
 tags = ["reveal.js","hugo"]
 categories = ["talk","tech"]
@@ -9,7 +9,7 @@ layout = "bundle"
 [reveal_hugo]
 theme = "moon"
 highlight_theme = "solarized-dark"
-slide_number = true
+slide_number = "c/t"
 transition = "zoom"
 +++
 
