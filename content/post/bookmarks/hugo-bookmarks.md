@@ -21,6 +21,9 @@ categories = ["bookmark"]
 This page keep the Hugo framework related bookmarks.
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
-- [Academic Theme Documentation](https://sourcethemes.com/academic/docs/)
 - [Hugo Discussion](https://discourse.gohugo.io/latest)
+- [reveal-hugo theme @ gohugo](https://themes.gohugo.io/reveal-hugo/)
+- [dzello/reveal-hugo @ github](https://github.com/dzello/reveal-hugo)
+- [hakimel/reveal.js @ github](https://github.com/hakimel/reveal.js)
+- [Academic Theme Documentation](https://sourcethemes.com/academic/docs/)
 
