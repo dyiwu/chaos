@@ -1,8 +1,8 @@
 +++
 title = "Chinese slide example"
-date = 2019-05-16T19:20:41+08:00
+date = 2019-05-25T19:20:41+08:00
 tags = ["reveal.js","hugo"]
-categories = ["talk","tech"]
+categories = ["slide"]
 outputs = ["Reveal"]
 layout = "bundle"
 

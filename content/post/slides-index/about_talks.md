@@ -1,19 +1,19 @@
 +++
-title = "About talks"
-date = 2019-05-16T19:20:41+08:00
+title = "About Slides"
+date = 2019-05-26T08:02:41+08:00
 tags = ["reveal.js","hugo"]
-categories = ["talk"]
+categories = ["slide"]
 toc = true
 +++
-Here are varying tech talks, presentations.
+Things about the presentation slides.
 <!--more-->
 ## Front mater of slide deck
-```
+```golang
 +++
-title = "title of talk"
-date = 2019-05-16T19:20:41+08:00
+title =  "{{ replace .TranslationBaseName "-" " " | title }}"
+date = {{ .Date }}
 tags = ["reveal.js","hugo"]
-categories = ["talk"]
+categories = ["slide"]
 
 outputs = ["Reveal"]
 layout = "bundle"
@@ -21,24 +21,26 @@ layout = "bundle"
 [reveal_hugo]
 theme = "moon"
 highlight_theme = "solarized-dark"
-slide_number = true
+slide_number = "c/t"
 transition = "zoom"
 +++
 ```
 
-### Folder structure
-The folder structure would look like as section presentations.
+## Folder structure
+The folder structure would look like as section presentations. Additional content files can be placed in the section and will be added to the presentation in the order of their **weight** in front matter also, such  
+`weigt = 10`
 
 ```
 - content
-  - about-talks # The about page of talks.
-  - ted-talk
-    - index.md # beginning of the ted talk presentation
-    - body.md # appends to the ted talk presentation
-    - conclusion.md # appends to the ted talk presentation
+  - slide
+    - slide-for-my-talk
+      - index.md # beginning slide of this presentation
+      - body.md # appends to this presentation
+      - conclusion.md # appends again
+      - picture.jpg  # picture used in slide
 ```
 
-### Keyboard shortcuts
+## Keyboard shortcuts
 
 - <kbd>N</kbd>, <kbd>SPACE</kbd>:	Next slide
 - <kbd>P</kbd>: Previous slide
@@ -55,7 +57,7 @@ The folder structure would look like as section presentations.
 - <kbd>?</kbd>: Show keyboard shortcuts
 - <kbd>alt</kbd> + click: Zoom in. Repeat to zoom back out.
 
-### Reference:
+## Reference:
 
 - [reveal-hugo theme @ gohugo](https://themes.gohugo.io/reveal-hugo/)
 - [dzello/reveal-hugo @ github](https://github.com/dzello/reveal-hugo)

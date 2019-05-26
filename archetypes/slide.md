@@ -2,7 +2,7 @@
 title =  "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
 tags = ["reveal.js","hugo"]
-categories = ["talk","tech"]
+categories = ["slide"]
 
 outputs = ["Reveal"]
 layout = "bundle"

@@ -1,8 +1,8 @@
 +++
 title =  "Section shortcode usage"
-date = 2019-05-20T15:30:03+08:00
+date = 2019-05-26T01:20:03+08:00
 tags = ["reveal.js","hugo"]
-categories = ["talk","tech"]
+categories = ["slide"]
 
 outputs = ["Reveal"]
 layout = "bundle"

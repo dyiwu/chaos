@@ -51,10 +51,10 @@ copyright = 'Dyi-Wu Liu &nbsp;&nbsp;&nbsp;<a rel="license" href="http://creative
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "Talks"
+  name = "Slides"
   weight = 45
-  identifier = "talks"
-  url = "/talk/"
+  identifier = "slides"
+  url = "/slide/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
