@@ -16,6 +16,11 @@ transition = "zoom"
 {{% section %}}
 
 ## Vertical slide 1-1
+Hit the <kbd>S</kbd> key to open speaker notes view.  
+Hit the <kbd>?</kbd> key to show keyboard shortcuts.  
+See the whole [Keyboard shortcuts](http://127.0.0.1:1313/post/slides-index/about_slides/#keyboard-shortcuts).
+
+
 {{% note %}}
 Welcome message to the audience.
 {{% /note %}}

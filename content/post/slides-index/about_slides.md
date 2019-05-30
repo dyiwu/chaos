@@ -55,7 +55,7 @@ The folder structure would look like as section presentations. Additional conten
 - <kbd>ESC</kbd>, <kbd>O</kbd>: Slide overview / Escape from full-screen
 - <kbd>S</kbd>: Speaker notes view
 - <kbd>?</kbd>: Show keyboard shortcuts
-- <kbd>alt</kbd> + click: Zoom in. Repeat to zoom back out.
+- <kbd>Ctrl</kbd> + click: Zoom in. Repeat to zoom back out.
 
 ## Reference:
 
