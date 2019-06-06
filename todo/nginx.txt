@@ -1,0 +1,48 @@
+$ sudo apt-get install nginx
+$ sudo nginx -v
+
+https://www.itzgeek.com/how-tos/linux/linux-mint-how-tos/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-linux-mint-19.html
+
+
+Install Nginx
+
+Download the Nginx signing key from the official site.
+wget http://nginx.org/keys/nginx_signing.key
+
+Add Nginx repository to the system using the below commands.
+echo "deb [arch=amd64] http://nginx.org/packages/ubuntu/ bionic nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+
+echo "deb-src [arch=amd64] http://nginx.org/packages/ubuntu/ bionic nginx" | sudo tee -a /etc/apt/sources.list.d/nginx.list
+
+Update repository index.
+sudo apt update
+
+Install Nginx using the following command.
+sudo apt install -y nginx
+
+Test Nginx
+Open a web browser and hit it to,
+http://127.0.0.1/
+
+Install PHP-FPM
+Next is to install PHP through PHP-FPM (PHP-FPM (FastCGI Process Manager), it is an alternative PHP FastCGI implementation. Install it by using the apt command.
+sudo apt install -y php-fpm php-mysql php-cli
+
+Edit the respective php.ini depending on the PHP version you have installed on the system.
+sudo nano /etc/php/7.2/fpm/php.ini
+
+set cgi.fix_pathinfo to 0.
+cgi.fix_pathinfo=0
+
+Edit the /etc/php/7.2/fpm/pool.d/www.conf file.
+sudo nano /etc/php/7.2/fpm/pool.d/www.conf
+
+FROM:
+
+listen = /var/run/php7.2-fpm.sock
+TO:
+
+listen = 127.0.0.1:9000
+
+===========
+https://blog.gtwang.org/linux/nginx-php-fpm-configuration-optimization/
