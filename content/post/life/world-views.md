@@ -1,5 +1,5 @@
 ---
-title: "World Views 三觀"
+title: "World Views - 三觀"
 date: 2019-06-16T20:02:29+08:00
 tags: ["修身"]
 categories: ["life"]
