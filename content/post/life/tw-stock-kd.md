@@ -1,7 +1,7 @@
 ---
 title: "KD 指標"
 date: 2019-05-12T23:43:05+08:00
-tags: ["財經","臺股","技術分析"]
+tags: ["財經"]
 categories: ["life"]
 
 toc: true

@@ -2,8 +2,7 @@
 title = "財經詞彙"
 date = 2019-04-25T16:27:39+08:00
 draft = false
-
-tags = ["財經","詞彙"]
+tags = ["財經"]
 categories = ["life"]
 +++
 ## 財經詞彙
