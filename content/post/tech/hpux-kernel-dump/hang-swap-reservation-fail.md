@@ -2,7 +2,8 @@
 title = "Application hang with slow login on console access."
 date = 2008-10-03T14:17:36+08:00
 draft = false
-tags = ["hp-ux", "kernel","hang","swap"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## Application hang with slow login on console access.

@@ -3,7 +3,8 @@ title = "Oracle CRS initiated INIT on cpu 2."
 date = 2010-01-20T04:31:03+08:00
 draft = false
 summary = "Unexpected node reboot on death of 'init.cssd fatal'"
-tags = ["hp-ux", "kernel","hang","oracle-crs-toc"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## Oracle CRS initiated INIT on cpu 2

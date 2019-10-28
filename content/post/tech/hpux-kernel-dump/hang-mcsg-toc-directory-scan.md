@@ -3,7 +3,8 @@ title = "MC/SG TOC system due to heavy CPU loading on directory scan."
 date = 2008-05-17T12:33:17+08:00
 draft = false
 summary = "Heavy CPU loading on directory scan leads MC/SG TOC system due to safety timer timedout."
-tags = ["hp-ux", "kernel","hang","mc-sg"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## MC/SG TOC system due to heavy CPU loading on directory scan.

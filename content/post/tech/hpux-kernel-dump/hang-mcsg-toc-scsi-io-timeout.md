@@ -2,7 +2,8 @@
 title = "MC/SG TOC system due to SCSI I/O time out."
 date = 2009-04-11T21:17:38+08:00
 draft = false
-tags = ["hp-ux", "kernel","hang","mc-sg"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## MC/SG TOC system due to SCSI I/O time out.

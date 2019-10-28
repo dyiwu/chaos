@@ -3,7 +3,8 @@ title = "Data page fault panicon tcp_wput()"
 date = 2006-04-09T02:30:57+08:00
 draft = false
 summary = "A null pointer de-reference on tcp_wput() routine."
-tags = ["hp-ux", "kernel","panic","de-reference"]
+
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## Data page fault panic. 

@@ -3,7 +3,7 @@ title = "System panic due to 2 bits flipped on CPU"
 date = 2010-04-29T23:41:02+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","panic","bits-flipped"]
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## System panic due to 2 bits flipped on CPU

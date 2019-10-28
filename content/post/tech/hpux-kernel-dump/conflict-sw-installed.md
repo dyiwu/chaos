@@ -3,7 +3,7 @@ title = "Application fail to start with 'bind address failure' error message."
 date = 2006-12-27T17:54:27+08:00
 draft = false
 
-tags = ["hp-ux","x25","acc"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## Application fail to start with 'bind address failure' error message.

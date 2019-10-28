@@ -3,7 +3,8 @@ title = "System hang with memory sleepers."
 date = 2004-05-31T09:23:52+08:00
 draft = false
 summary = "System hang with memory sleepeds."
-tags = ["hp-ux", "kernel","hang","memory_sleeper"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## system hang with free memory desperately low

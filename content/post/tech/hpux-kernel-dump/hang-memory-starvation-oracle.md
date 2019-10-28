@@ -3,7 +3,8 @@ title = "System hang with memory starvation."
 date = 2005-11-29T08:53:35+08:00
 draft = false
 summary = "System went to memory starvation situation"
-tags = ["hp-ux", "kernel","hang","memory_starvation"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System hang with memory starvation.

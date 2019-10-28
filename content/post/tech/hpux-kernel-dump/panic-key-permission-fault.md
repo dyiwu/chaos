@@ -3,7 +3,8 @@ title = "System panic with Key Permission Fault in KERNEL mode."
 date = 2010-01-25T04:28:07+08:00
 draft = false
 summary = "System panic with Key Permission Fault in KERNEL mode."
-tags = ["hp-ux", "kernel","panic","key-permission"]
+
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## Panic string as Unresolved kernel interruption.

@@ -3,7 +3,7 @@ title = "System panic due to uninitialized variable"
 date = 2010-02-27T17:25:16+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","panic","uninitialized"]
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## System panic due to uninitialized variable

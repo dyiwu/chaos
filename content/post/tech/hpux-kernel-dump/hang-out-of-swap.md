@@ -3,7 +3,7 @@ title = "System hang due to NFS server down and out of swap space."
 date = 2005-05-05T11:26:55+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","hang","swap"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System hang due to NFS server down and out of swap space.

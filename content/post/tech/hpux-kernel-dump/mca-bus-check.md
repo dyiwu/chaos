@@ -3,7 +3,8 @@ title = "Bus check MCA"
 date = 2006-05-23T21:25:28+08:00
 draft = false
 summary = "Bus Check[0] - A hard fail response was detected in data on the front side bus (FSB)."
-tags = ["hp-ux", "kernel","mca","bus_check"]
+
+tags = ["hpux-kernel-dump", "mca"]
 categories = ["tech"]
 +++
 ## Bus check MCA

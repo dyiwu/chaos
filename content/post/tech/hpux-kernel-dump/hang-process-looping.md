@@ -3,7 +3,7 @@ title = "System hang with process looping in soaccept()."
 date = 2005-06-07T10:23:01+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","hang","looping"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System hang with process looping in soaccept().

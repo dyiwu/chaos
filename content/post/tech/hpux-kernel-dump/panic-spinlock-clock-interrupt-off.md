@@ -3,7 +3,7 @@ title = "System panic with Panic string : Spinlock deadlock!"
 date = 2004-06-23T15:29:43+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","panic","spinlock"]
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## System panic with Panic string : Spinlock deadlock!

@@ -3,7 +3,8 @@ title = "System panic with data page fault in ATQ_F_dequeue"
 date = 2004-04-01T05:30:29+08:00
 draft = false
 summary = "data page fault in ATQ_F_dequeue routine."
-tags = ["hp-ux", "kernel","panic","data_page_fault"]
+
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## Data page fault panic

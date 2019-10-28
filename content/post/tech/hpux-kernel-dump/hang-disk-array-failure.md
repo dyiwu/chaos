@@ -3,7 +3,7 @@ title = "System hang with disk array failure."
 date = 2010-03-04T11:05:16+08:00
 draft = false
 
-tags = ["hp-ux","kernel","hang","disk_array"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System hang wit disk array failure.

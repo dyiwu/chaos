@@ -3,7 +3,7 @@ title = "System panics with data page fault in scsi_dequeue."
 date = 2006-07-29T14:30:57+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","panic","data_page_fault"]
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## System panics with data page fault in scsi_dequeue.

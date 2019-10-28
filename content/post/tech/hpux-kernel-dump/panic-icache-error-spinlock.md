@@ -3,7 +3,8 @@ title = "I-cache errors lead spinlock deadlock"
 date = 2015-08-01T21:29:34+08:00
 draft = false
 summary = "Spinlock deadlock failure with LPMC I-cache errors CPU 1 failure."
-tags = ["hp-ux", "kernel","panic","spinlock"]
+
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## I-cache errors lead spinlock deadlock

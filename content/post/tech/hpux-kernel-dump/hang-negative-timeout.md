@@ -3,7 +3,8 @@ title = "System hang with timeout call with negative time."
 date = 2008-10-20T09:25:46+08:00
 draft = false
 summary = "mpt driver timeout call with negative time."
-tags = ["hp-ux", "kernel","hang","negative_timeout"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## mpt driver timeout call with negative time.

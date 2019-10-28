@@ -3,7 +3,8 @@ title = "I-Cache Parity Error on CPU 3 lead spinlock deadlock"
 date = 2004-04-12T09:58:01+08:00
 draft = false
 summary = "Spinlock deadlock failure with LPMC I-cache errors CPU 3 failure."
-tags = ["hp-ux", "kernel","panic","spinlock"]
+
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## I-Cache Parity Error on CPU 3

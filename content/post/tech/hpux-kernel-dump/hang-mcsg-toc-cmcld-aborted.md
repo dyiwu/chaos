@@ -3,7 +3,7 @@ title = "MC/SG TOC system due to MC/ServiceGuard daemon cmcld aborted."
 date = 2008-03-13T13:44:18+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","hang","mc-sg"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## MC/SG TOC system due to MC/ServiceGuard daemon cmcld aborted.

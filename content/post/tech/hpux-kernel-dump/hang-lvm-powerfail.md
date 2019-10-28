@@ -3,7 +3,8 @@ title = "System hang in the LVM POWERFAIL queue."
 date = 2005-04-28T09:58:01+08:00
 draft = false
 summary = "System hang in the LVM POWERFAIL queue."
-tags = ["hp-ux", "kernel","hang","lvm","powerfail"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System hang in the LVM POWERFAIL queue.

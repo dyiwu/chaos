@@ -3,7 +3,7 @@ title = "System panic with Illegal instruction trap"
 date = 2004-01-01T13:47:40+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","panic","illegal_instruction"]
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## System panic with Illegal instruction trap

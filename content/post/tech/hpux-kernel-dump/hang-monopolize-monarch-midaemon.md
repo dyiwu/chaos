@@ -3,7 +3,7 @@ title = "System hang due to midaemon is monopolizing the monarch."
 date = 2004-01-29T09:40:52+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","hang","monopolize"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System hang due to midaemon is monopolizing the monarch.

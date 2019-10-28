@@ -3,7 +3,8 @@ title = "After LPMC event, monarch processor have had clock interrupts held off.
 date = 2004-04-12T09:58:01+08:00
 draft = false
 summary = "After LPMC event, monarch processor have had clock interrupts held off."
-tags = ["hp-ux", "kernel","hang","monarch"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## Monarch processor have had clock interrupts held off

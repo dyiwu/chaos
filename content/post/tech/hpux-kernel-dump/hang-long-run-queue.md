@@ -4,7 +4,8 @@ title = "System mini hang when long run queue."
 date = 2004-04-05T10:18:00+08:00
 draft = false
 summary = "System mini hang when long run queue."
-tags = ["hp-ux", "kernel","hang","monopolize"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## System mini hang when long run queue.

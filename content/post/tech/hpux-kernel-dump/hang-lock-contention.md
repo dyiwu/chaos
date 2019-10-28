@@ -3,7 +3,8 @@ title = "Lock contention leads system hang."
 date = 2008-11-11T04:50:36+08:00
 draft = false
 summary = "Lock contention (shm_lock/vmtotal_lock) leads system hang."
-tags = ["hp-ux", "kernel","hang","lock-contention"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 On a multiprocessor system, vhand will consume 100% of a

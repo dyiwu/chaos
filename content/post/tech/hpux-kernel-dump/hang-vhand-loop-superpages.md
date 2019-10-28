@@ -4,7 +4,8 @@ title = "Vhand loops in unlock superpages lead system hang."
 date = 2004-05-21T15:10:55+08:00
 draft = false
 summary = "Vhand loops in unlock superpages lead system hang."
-tags = ["hp-ux", "kernel","hang","vhand"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## Vhand run in a loop to unlock a superpage and monopolizes the cpu for a while.

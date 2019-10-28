@@ -3,7 +3,7 @@ title = "MC/SG TOC system due to bad cable."
 date = 2005-10-11T11:17:15+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","hang","mc-sg"]
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## MC/SG TOC system due to bad cable.

@@ -3,7 +3,7 @@ title = "System panic with kalloc: out of kernel virtual space."
 date = 2004-06-28T11:35:46+08:00
 draft = false
 
-tags = ["hp-ux", "kernel","panic","kalloc"]
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## System panic with kalloc: out of kernel virtual space.

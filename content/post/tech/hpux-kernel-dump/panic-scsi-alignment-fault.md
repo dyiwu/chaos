@@ -3,7 +3,8 @@ title = "Unaligned Reference Fault in SCSI driver when narrow device connected."
 date = 2004-07-08T16:16:13+08:00
 draft = false
 summary = "Unaligned Reference Fault in SCSI driver when narrow device connected."
-tags = ["hp-ux", "kernel","panic","scsi","alignment"]
+
+tags = ["hpux-kernel-dump", "panic"]
 categories = ["tech"]
 +++
 ## Unaligned Reference Fault in SCSI driver when narrow device connected.

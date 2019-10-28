@@ -3,7 +3,8 @@ title = "Time services process xnptd monopolize CPU 0 in kernel mode."
 date = 2004-01-13T15:51:00+08:00
 draft = false
 summary = "xnptd monopolize CPU 0 in kernel mode."
-tags = ["hp-ux", "kernel","hang","monopolize","xntpd"]
+
+tags = ["hpux-kernel-dump", "hang"]
 categories = ["tech"]
 +++
 ## Time services process xnptd monopolize CPU 0 in kernel mode.
