@@ -8,5 +8,5 @@ categories: ["life"]
 ### 日課-武術養生-筋骨功法
 <!--more-->
 <video controls>
-  <source src="日課-武術養生-筋骨功法.mp4" type="video/mp4">
+  <source src="https://drive.google.com/uc?export=download&id=13YhjZUaWS_n4ETv7l_zEjwh0LONMeVDj" type="video/mp4">
 </video>
