@@ -6,10 +6,9 @@ weight: 50
 ---
 **_一個老碼農的筆記_**  
 **_Chaos_** is an old coding peasant's note book. 
-Which is build on top of [**_Hugo_**](https://gohugo.io/) with [**_Even_**](https://themes.gohugo.io/hugo-theme-even/) and [**_Reveal-Hugo_**](https://themes.gohugo.io/reveal-hugo/) themes and hosted on [**_GitHub_**](https://github.com/).
+Which is build on top of [**_Hugo_**](https://gohugo.io/) with [**_Even_**](https://themes.gohugo.io/hugo-theme-even/) themes and hosted on [**_GitHub_**](https://github.com/).
 _Hugo_ is a static site engine written in [**_Go_**](https://golang.org/).
 _Even_ is a super concise theme for Hugo.
-_Eveal-Hugo_ is a Hugo theme for [**_Reveal.js_**](https://revealjs.com/), which can turn any properly-formatted Hugo content into a HTML presentation.
 ## <p class="tag-cloud" style="color:navy"><a>_**Listen**_</a></p>
 ## <p class="tag-cloud" style="color:navy;margin-left:30px"><a>_**Commit**_</a></p>
 ## <p class="tag-cloud" style="color:navy;margin-left:60px"><a>_**Ownership**_</a></p>
