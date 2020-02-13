@@ -8,9 +8,17 @@ categories: ["life"]
 ## ETF 筆記
 ### 代號名稱
 - 0050（元大台灣50）
-- 0056（元大高股息）
+[Goodinfo!臺灣股市資訊網](https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=0050)、
+[臺灣證券交易所](https://www.twse.com.tw/zh/stockSearch/showStock?stkNo=0050)
+- 0056（元大高股息） 
+[Goodinfo!臺灣股市資訊網](https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=0056)、
+[臺灣證券交易所](https://www.twse.com.tw/zh/stockSearch/showStock?stkNo=0056)
 - 00692（富邦公司治理）
+[Goodinfo!臺灣股市資訊網](https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=00692)、
+[臺灣證券交易所](https://www.twse.com.tw/zh/stockSearch/showStock?stkNo=00692)
 - 00850（元大台灣ESG永續）
+[Goodinfo!臺灣股市資訊網](https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=00850)、
+[臺灣證券交易所](https://www.twse.com.tw/zh/stockSearch/showStock?stkNo=00850)
 
 ### 短期投資
 1. 若是小資族，可以在，日線或週線KD20時買進，等到KD80時賣出。
