@@ -11,12 +11,12 @@ Which is build on top of [***Hugo***](https://gohugo.io/) with [***Even***](http
 *Even* is a super concise theme for Hugo.
 
 <div class="container">
-  <img src="alone_800x500.jpg" style="width:100%;">
+  <img src="alone_800x500.jpg" style="width:80%">
   <div class="text-block">
-  <p style="margin-left:5%"><h2><i><b>Listen</p>
-  <p style="margin-left:25%">Commit</p>
-  <p style="margin-left:45%">Ownership</p>
-  <p style="margin-left:5%"><h4>Before honor comes humility. 15:33</p></div>
+  <p style="margin-left:0%"><h3><i><b>Listen</p>
+  <p style="margin-left:10%">Commit</p>
+  <p style="margin-left:20%">Ownership</p>
+  <p style="margin-left:0%"><h4>Before honor comes humility. 15:33</p></div>
 </div>
 
 <style>
@@ -26,8 +26,8 @@ Which is build on top of [***Hugo***](https://gohugo.io/) with [***Even***](http
 
 .text-block {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
   color: navy;
 }
 </style>
