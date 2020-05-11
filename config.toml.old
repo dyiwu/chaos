@@ -1,5 +1,5 @@
 baseurl = "https://dyiwu.github.io/"
-languageCode = "en-us"
+languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Chaos - 一個老碼農的筆記"
 preserveTaxonomyNames = true
@@ -214,5 +214,3 @@ copyright = 'Dyi-Wu Liu &nbsp;&nbsp;&nbsp;<a rel="license" href="http://creative
 [permalinks]
     pos = "/:year/:month/:filename/"
 
-[markup.goldmark.renderer]
-      unsafe = true
