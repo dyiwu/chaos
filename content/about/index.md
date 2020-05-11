@@ -22,7 +22,7 @@ weight: 50
 .text-block {
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 10px;
   color: navy;
 }
 </style>
