@@ -157,3 +157,9 @@ git pull
 [permalinks]
     post = "/:year/:month/:filename/"
 ```
+- [Configure Markup](https://gohugo.io/getting-started/configuration-markup/)  
+  [Goldmark](https://github.com/yuin/goldmark/) is from Hugo 0.60 the default library used for Markdown. By default, Goldmark does not render raw HTMLs and potentially dangerous links. If you have lots of inline HTML and/or JavaScript, you may need to turn this on by adding these into config.toml
+```
+[markup.goldmark.renderer]
+      unsafe = true
+```

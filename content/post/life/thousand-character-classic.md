@@ -30,7 +30,7 @@ categories = ["life"]
 > 不在背後說別人壞話，不依仗自己所長。  
 > 這樣別人才願意和你交往，胸襟豁達才可以讓人難以度量。  
 
-Wikipedia:[_Thousand Character Classic_](https://en.wikipedia.org/wiki/Thousand_Character_Classic)
+Wikipedia:[***Thousand Character Classic***](https://en.wikipedia.org/wiki/Thousand_Character_Classic)
 ### 原文：
 天地玄黃， 宇宙洪荒。 日月盈昃， 辰宿列張。  
 寒來暑往， 秋收冬藏。 閏餘成歲， 律呂調陽。  
