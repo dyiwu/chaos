@@ -26,7 +26,7 @@ Which is build on top of [***Hugo***](https://gohugo.io/) with [***Even***](http
 
 .text-block {
   position: absolute;
-  top: 20px;
+  top: 5px;
   left: 20px;
   color: navy;
 }
