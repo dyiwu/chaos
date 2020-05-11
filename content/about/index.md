@@ -11,7 +11,7 @@ Which is build on top of [***Hugo***](https://gohugo.io/) with [***Even***](http
 *Even* is a super concise theme for Hugo.
 
 <div class="container">
-  <img src="alone_800x500.jpg" style="width:80%">
+  <img src="alone_800x500.jpg" style="width:100%">
   <div class="text-block">
   <p style="margin-left:0%"><h3><i><b>Listen</p>
   <p style="margin-left:10%">Commit</p>
