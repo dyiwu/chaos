@@ -1,1 +1,1 @@
-hugo new post/aaa.md
+hugo new post/bbb.md
