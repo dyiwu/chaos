@@ -12,6 +12,7 @@ weight: 50
   <p style="margin-left:10%">Commit</p>
   <p style="margin-left:20%">Ownership</p>
   <p style="margin-left:0%"><h4>Before honor comes humility. 15:33</p></div>
+  </i></b>
 </div>
 
 <style>
