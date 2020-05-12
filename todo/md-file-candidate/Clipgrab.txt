@@ -1,0 +1,14 @@
+
+To install Clipgrab in Ubuntu and other Ubuntu based distributions, 
+you can use the official PPA by Clipgrab team:
+
+sudo add-apt-repository ppa:clipgrab-team/ppa
+sudo apt-get update
+sudo apt-get install clipgrab
+
+To remove Clipgrab from the system use the following commands:
+
+sudo apt-get remove clipgrab
+sudo add-apt-repository --remove ppa:clipgrab-team/ppa
+
+

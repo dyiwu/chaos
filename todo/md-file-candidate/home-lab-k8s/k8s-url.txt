@@ -1,0 +1,6 @@
+https://jvns.ca/blog/2017/06/04/learning-about-kubernetes/
+
+https://www.inwinstack.com/category/technical/kubernetes/
+https://www.inwinstack.com/2018/04/17/what-is-kubernetes-part1/
+
+https://blog.toright.com/posts/6416/kubernetes-intro.html

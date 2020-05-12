@@ -1,0 +1,150 @@
+k8s cluster centos kvm
+
+https://www.jnvilo.com/cms/sysadmin/cloud/kubernetes/install-a-3-node-kubernetes-cluster-on-centos-7/
+
+kubernetes cluster centos kvm kubeadm
+
+https://www.mvps.net/docs/building-a-kubernetes-cluster-k8s-on-centos-7-in-a-kvm/
+
+https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
+https://www.cnblogs.com/yinzhengjie/p/12257108.html
+
+centos "kvm" kubeadm
+https://www.mvps.net/docs/building-a-kubernetes-cluster-k8s-on-centos-7-in-a-kvm/
+-----
+homelab kubernetes cluster
+https://medium.com/kuberverse/how-to-build-a-full-kubernetes-cluster-in-your-home-lab-using-an-automated-easy-and-fancy-way-e5853ae4e08
+
+homelab kubernetes cluster on bare metal
+=========================================
+okd
+https://www.openshift.com/blog/guide-to-installing-an-okd-4-4-cluster-on-your-home-lab
+https://linuxacademy.com/community/show/32921-kubernetes-home-lab/
+https://github.com/Praqma/LearnKubernetes/blob/master/kamran/Kubernetes-The-Hard-Way-on-BareMetal.md
+
+
+https://medium.com/@C.W.Hu/kubernetes-basic-concept-tutorial-e033e3504ec0
+-------------------------------------------------
+
+https://www.mvps.net/docs/building-a-kubernetes-cluster-k8s-on-centos-7-in-a-kvm/
+https://medium.com/@nicholas.w.talbot/kubernetes-lab-with-kvm-8ab958cd3c5f
+
+https://computingforgeeks.com/how-to-install-minikube-on-centos-linux-with-kvm/
+
+***********
+
+
+https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
+
+
+***********
+
+----------
+How To Use Vagrant with Libvirt on Linux
+https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/
+
+Install KVM on CentOS / RHEL / Ubuntu / Debian / SLES / Arch Linux
+https://computingforgeeks.com/install-kvm-centos-rhel-ubuntu-debian-sles-arch/
+
+virsh commands cheatsheet to manage KVM guest virtual machines
+https://computingforgeeks.com/virsh-commands-cheatsheet/
+
+cockpit with Virtual Machines
+https://cockpit-project.org/
+https://cockpit-project.org/guide/latest/feature-virtualmachines.html#feature-virtualmachines-systemaccess
+
+=======================
+kubectl get nodes
+The connection to the server 10.0.2.15:6443 was refused - did you specify the right host or port?
+
+
+# sudo -i
+# swapoff -a
+# exit
+# strace -eopenat kubectl version
+
+kubectl create clusterrolebinding dashboard-admin-sa \
+--clusterrole=cluster-admin --serviceaccount=default:dashboard-admin-sa
+
+=======================================
+The Ultimate Guide to the Kubernetes Dashboard: How to Install, Access, Authenticate and Add Heapster Metrics
+
+https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the-kubernetes-dashboard
+
+
+Kubenetes Dashboard Access URL
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+[root@master-node ~]# kubectl create clusterrolebinding dashboard-admin-sa \
+> --clusterrole=cluster-admin --serviceaccount=default:dashboard-admin-sa
+clusterrolebinding.rbac.authorization.k8s.io/dashboard-admin-sa created
+
+[root@master-node ~]# kubectl get secrets
+NAME                             TYPE                                  DATA   AGE
+dashboard-admin-sa-token-2c5rs   kubernetes.io/service-account-token   3      91s
+default-token-2nzfg              kubernetes.io/service-account-token   3      4h7m
+
+[root@master-node ~]# kubectl describe secret dashboard-admin-sa-token-2c5rs
+Name:         dashboard-admin-sa-token-2c5rs
+Namespace:    default
+Labels:       <none>
+Annotations:  kubernetes.io/service-account.name: dashboard-admin-sa
+              kubernetes.io/service-account.uid: 1f7de01e-10ce-449a-8f6d-a2c0b847efac
+
+Type:  kubernetes.io/service-account-token
+
+Data
+====
+token:      eyJhbGciOiJSUzI1NiIsImtpZCI6Im0wTlh0OFVLSF9wcEMzSHA2NjlYLUhXOTY5ZnUyTnF6d013VmRITGNNLWsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRhc2hib2FyZC1hZG1pbi1zYS10b2tlbi0yYzVycyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJkYXNoYm9hcmQtYWRtaW4tc2EiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIxZjdkZTAxZS0xMGNlLTQ0OWEtOGY2ZC1hMmMwYjg0N2VmYWMiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpkYXNoYm9hcmQtYWRtaW4tc2EifQ.gfN4JBcFHRxuC2QHJeE3SR8PRtnQRHBOMQ8F4VW_zBwYR-7uQrx3xONigyl3R2WGpaBhhHBZXt-LYSbcF5hsgaoMBH9b95praZdAP7_3WwpEi5Noh6FrpbvKW51cyU0gg4nuTegj8xNMQqz9olp_Ssimi0esfRuk_NDcDOVfNsvdj422gz637iDhyPIv13z5X_JXjLto0ag0gckg8Nxty6FFVATWfaDBsCUWtrvs9h_l6j3wqh8rO6Bj8TIOxYFHFA6VVIk38YlWtiUk1crbzgdFuegmfBJxdCrbzHTybM1KS6oC6lu659uvAISnl8NiGnA1z4llf1qdBjGaMUzjIg
+ca.crt:     1025 bytes
+namespace:  7 bytes
+[root@master-node ~]#
+
+https://192.168.1.110:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+
+
+Kubernetes home page.
+https://kubernetes.io/
+
+
+Click documentation tab.
+https://kubernetes.io/docs/home/
+
+How to Install Xrdp Server (Remote Desktop) on CentOS 8
+enable Remote desktop server xrdp on centos 8
+https://linuxize.com/post/how-to-install-xrdp-on-centos-8/
+
+
+How to Install Google Chrome Web Browser on CentOS 8
+https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-8/
+
+Marvell 88E8056 sky2 NIC is not detected in RHEL 8
+https://access.redhat.com/solutions/4481881
+
+
+$ lspci |grep net
+Marvell 88E072 PCI-E Gigabit Ethernet controller
+https://elrepo.org/linux/elrepo/el8/x86_64/RPMS/kmod-sky2-1.30-1.el8_0.elrepo.x86_64.rpm
+https://centosfaq.org/centos/my-ethernet-is-not-listed-in-centos-8-bootiso/
+
+Enabling the EPEL repo
+sudo yum install epel-release
+https://elrepo.org/linux/elrepo/el8/x86_64/RPMS/kmod-sky2-1.30-1.el8_0.elrepo.x86_64.rpm
+
+/docs/building-a-kubernetes-cluster-k8s-on-centos-7-in-a-kvm/
+
+
+
+https://centos.pkgs.org/8/elrepo-x86_64/kmod-sky2-1.30-1.el8_0.elrepo.x86_64.rpm.html
+
+https://centos.pkgs.org/8/elrepo-x86_64/kmod-sky2-1.30-1.el8_0.elrepo.x86_64.rpm.html
+https://centos.pkgs.org/8/elrepo-x86_64/kmod-sky2-1.30-1.el8_0.elrepo.x86_64.rpm.html
+
+Install Howto
+Download latest elrepo-release rpm from
+http://mirror.rackspace.com/elrepo/elrepo/el8/x86_64/RPMS/
+Install elrepo-release rpm:
+# rpm -Uvh elrepo-release*rpm
+Install kmod-sky2 rpm package:
+# dnf install kmod-sky2
+

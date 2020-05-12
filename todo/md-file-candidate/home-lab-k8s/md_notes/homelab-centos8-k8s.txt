@@ -1,0 +1,16 @@
+Homelab - CentOS 8 KVM host on bare matel and 3 node k8s cluster on VMs
+
+Install KVM on CentOS / RHEL / Ubuntu / Debian / SLES / Arch Linux
+https://computingforgeeks.com/install-kvm-centos-rhel-ubuntu-debian-sles-arch/
+
+virsh commands cheatsheet to manage KVM guest virtual machines
+https://computingforgeeks.com/virsh-commands-cheatsheet/
+
+cockpit with Virtual Machines
+https://cockpit-project.org/
+https://cockpit-project.org/guide/latest/feature-virtualmachines.html#feature-virtualmachines-systemaccess
+
+
+How to Install a Kubernetes Cluster on CentOS 8
+https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
+

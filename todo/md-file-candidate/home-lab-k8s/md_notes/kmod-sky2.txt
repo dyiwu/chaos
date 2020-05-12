@@ -1,0 +1,23 @@
+Install Marvell Yukon 2 Gigabit Ethernet driver on Centos 8.1
+
+Check the PCI-E interface on system by:
+$ lspci |grep net
+Ethernet controller: Marvell Technology Group Ltd. 
+88E8072 PCI-E Gigabit Ethernet Controller (rev 10)
+
+Package description: 
+https://centos.pkgs.org/8/elrepo-x86_64/kmod-sky2-1.30-2.el8_1.elrepo.x86_64.rpm.html
+Binary package:	
+https://mirror.rackspace.com/elrepo/elrepo/el8/x86_64/RPMS/kmod-sky2-1.30-2.el8_1.elrepo.x86_64.rpm
+
+Install Howto
+1. Download latest elrepo-release rpm
+# wget https://mirror.rackspace.com/elrepo/elrepo/el8/x86_64/RPMS/kmod-sky2-1.30-2.el8_1.elrepo.x86_64.rpm
+
+2. Install elrepo-release rpm:
+# rpm -Uvh kmod-sky2-1.30-2.el8_1.elrepo.x86_64.rpm
+
+3. Install kmod-sky2 rpm package:
+# dnf install kmod-sky2
+
+
