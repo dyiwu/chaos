@@ -41,6 +41,66 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
     ```
 #### Reference: [How to Install CentOS 8](https://linoxide.com/distros/how-to-install-centos/)
 
+### Enable Community Enterprise Linux Repository and extra packages
+
+- Download latest elrepo-release rpm from
+    ```
+    # wget https://mirror.rackspace.com/elrepo/extras/el8/x86_64/RPMS/elrepo-release-8.1-1.el8.elrepo.noarch.rpm
+    ```
+
+- Install elrepo-release rpm
+    ```
+    # rpm -Uvh elrepo-release-8.1-1.el8.elrepo.noarch.rpm
+    ```
+
+- Install elrepo-release rpm package:
+    ```
+    # dnf --enablerepo=elrepo-extras install elrepo-release
+    ```
+
+### Google Chrome Web Browser installation
+
+- Download the latest Chrome 64-bit .rpm package
+    ```
+    # wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+    ```
+-  Install Chrome Browser
+    ```
+    # sudo dnf localinstall google-chrome-stable_current_x86_64.rpm
+    ```
+- Starting Chrome Browser
+    Now that Chrome Browser is installed on your CentOS system, you can launch it either from the command line by typing google-chrome & or by clicking on the Chrome icon (Activities -> Chrome Browser).
+
+- Updating Chrome Browser
+    During the package installation, the official Google repository will be added to your system. Use the following cat command to verify that the file exists:
+    ```
+    # cat /etc/yum.repos.d/google-chrome.repo
+    [google-chrome]
+    name=google-chrome
+    baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+    ```
+    When a new version is released, you can perform an update with dnf or through your desktop standard Software Update tool.
+
+#### Reference：[How to Install Google Chrome Web Browser on CentOS 8](https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-8/)
+
+### Repository list
+- ***dnf repolist*** command can be used to list all enabled repositories. Provides more detailed information when -v option is used.
+
+    ```
+    # dnf repolist
+    Last metadata expiration check: 0:17:47 ago on Sat 16 May 2020 12:06:02 PM CST.
+    repo id                repo name                                                        status
+    AppStream              CentOS-8 - AppStream                                             5,318
+    BaseOS                 CentOS-8 - Base                                                  1,661
+    elrepo                 ELRepo.org Community Enterprise Linux Repository - el8              90
+    extras                 CentOS-8 - Extras                                                   16
+    google-chrome          google-chrome      
+
+    # dnf repolist -v
+    ```
 ### br0 Network Bridge creation
 - Check connections.
     ```
@@ -202,16 +262,129 @@ But in our case scenario, libvirtd service will be kept running regarding this b
     ```
 #### Reference: [How to Remove virbr0 and lxcbr0 Interfaces on CentOS/RHEL 6,7](https://www.thegeekdiary.com/how-to-remove-virbr0-and-lxcbr0-interfaces-on-centos-rhel-5-and-rhel-7/)
 
+### Enable xrdp service
+Xrdp is an open-source implementation of the Microsoft Remote Desktop Protocol (RDP) that allows you to graphically control a remote system. With RDP, you can log in to the remote machine and create a real desktop session the same as if you had logged in to a local machine.
+
+- Installing Xrdp
+   Xrdp is available in the EPEL software repository. If EPEL is not enabled on your system, enable it by typing:
+    ```
+    # dnf install epel-release
+    ```
+- Install the Xrdp package:
+    ```
+    # dnf install xrdp 
+    ```
+- Start up and enable at boot
+    When the installation process is complete, start the Xrdp service and enable it at boot:
+    ```
+    # systemctl enable xrdp --now
+    ```
+- Verify the xrdp status
+    ```
+    # systemctl status xrdp
+    ● xrdp.service - xrdp daemon
+       Loaded: loaded (/usr/lib/systemd/system/xrdp.service; enabled; vendor preset: disabled)
+       Active: active (running) since Sat 2020-05-16 13:31:09 CST; 12s ago
+         Docs: man:xrdp(8)
+               man:xrdp.ini(5)
+     Main PID: 9174 (xrdp)
+        Tasks: 1 (limit: 26213)
+       Memory: 1.0M
+       CGroup: /system.slice/xrdp.service
+               └─9174 /usr/sbin/xrdp --nodaemon
+    ```
+- Configuring xrdp
+
+    The configuration files are located in the /etc/xrdp directory. For basic Xrdp connections, you do not need to make any changes to the configuration files. Xrdp uses the default X Window desktop, which in this case, is Gnome.
+
+    The main configuration file is named xrdp.ini. This file is divided into sections and allows you to set global configuration settings such as security and listening addresses and create different xrdp login sessions.
+
+    Whenever you make any changes to the configuration file you need to restart the Xrdp service:
+    ```
+    # systemctl restart xrdp
+    ```
+    Xrdp uses startwm.sh file to launch the X session. If you want to use another X Window desktop, edit this file.
+
+- Configuring Firewall
+
+    By default, xrdp listens on port 3389 on all interfaces. If you run a firewall on your CentOS machine (which you should always do), you’ll need to add a rule to allow traffic on the Xrdp port.
+
+    Typically you would want to allow access to the Xrdp server only from a specific IP address or IP range. For example, to allow connections only from the 192.168.1.0/24 range, enter the following command:
+    ```
+    # firewall-cmd --new-zone=xrdp --permanent
+    # firewall-cmd --zone=xrdp --add-port=3389/tcp --permanent
+    # firewall-cmd --zone=xrdp --add-source=192.168.1.0/24 --permanent
+    # firewall-cmd --reload
+    ```
+    To allow traffic to port 3389 from anywhere use the commands below. Allowing access from anywhere is highly discouraged for security reasons.
+    ```
+    # firewall-cmd --add-port=3389/tcp --permanent
+    # firewall-cmd --reload
+    ```
+    For increased security, you may consider setting up Xrdp to listen only on localhost and creating an SSH tunnel that securely forwards traffic from your local machine on port 3389 to the server on the same port.
+
+    Another secure option is to install OpenVPN and connect to the Xrdp server trough the private network.
+
+- Connecting to the Xrdp Server
+
+    Now that the Xrdp server is configured, it is time to open your local Xrdp client and connect to the remote CentOS 8 system.
+
+    Windows users can use the default RDP client. Type “remote” in the Windows search bar and click on “Remote Desktop Connection”. This will open up the RDP client. In the “Computer” field, type the remote server IP address and click “Connect”.
+
+    On the login screen, enter your username and password and click “OK”.
+    Once logged in, you should see the default Gnome desktop. You can now start interacting with the remote desktop from your local machine using your keyboard and mouse.
+
+#### Reference: [How to Install Xrdp Server (Remote Desktop) on CentOS 8](https://linuxize.com/post/how-to-install-xrdp-on-centos-8/)
+
+### Cockpit Web Console
+The Cockpit is a web console with an easy to use web-based interface that enables you to carry out administrative tasks on your servers. Also being a web console, it means you can also access it through a mobile device as well.
+
+- Installing Cockpit Web Console
+    ```
+    # yum install cockpit
+    ```
+- Enable and start the ***cockpit.service***
+    ```
+    # systemctl start cockpit.socket
+    # systemctl enable --now cockpit.socket
+    # systemctl status cockpit.socket
+    ● cockpit.socket - Cockpit Web Service Socket
+       Loaded: loaded (/usr/lib/systemd/system/cockpit.socket; enabled; vendor preset: disabled)
+       Active: active (listening) since Sat 2020-05-16 14:04:31 CST; 23s ago
+         Docs: man:cockpit-ws(8)
+       Listen: [::]:9090 (Stream)
+        Tasks: 0 (limit: 26213)
+       Memory: 1.1M
+       CGroup: /system.slice/cockpit.socket
+    # ps auxf|grep cockpit
+    root     14317  0.0  0.0  12108  1072 pts/0    S+   14:20   0:00  |           \_ grep --color=auto cockpit
+    cockpit+ 12427  0.2  0.1 460256 11776 ?        Ssl  14:13   0:00 /usr/libexec/cockpit-ws
+    root     12436  0.0  0.0 135688  6036 ?        S    14:13   0:00  \_ /usr/libexec/cockpit-session localhost
+    dyiwu    12464  0.3  0.1 414680 14672 ?        Sl   14:13   0:01      \_ cockpit-bridge
+    ```
+- open the cockpit port 9090 in the firewall
+    ```
+    # firewall-cmd --add-service=cockpit --permanent
+    # firewall-cmd --reload
+    ```
+- Open the Cockpit web console in your web browser at the following URL’s:
+    ```
+    Locally: https://localhost:9090
+    Remotely with the server’s hostname: https://example.com:9090
+    Remotely with the server’s IP address: https://192.168.1.120:9090
+    ```
+    The console calls a certificate from the /etc/cockpit/ws-certs.d directory and uses the .cert extension file. To avoid having to prompt security warnings, install a certificate signed by a certificate authority (CA).
+
+    In the web console login screen, enter your system user name and password.
+
+#### Reference:
+- [How to Install Cockpit Web Console in CentOS 8](https://www.tecmint.com/install-cockpit-web-console-in-centos-8/)
+- [cockpit project](https://cockpit-project.org/)
+- [cockpit with Virtual Machines](https://cockpit-project.org/guide/latest/feature-virtualmachines.html#feature-virtualmachines-systemaccess)
 
 -------
 
-- virsh commands cheatsheet to manage KVM guest virtual machines
-https://computingforgeeks.com/virsh-commands-cheatsheet/
+- [virsh commands cheatsheet to manage KVM guest virtual machines](https://computingforgeeks.com/virsh-commands-cheatsheet/)
 
-- cockpit with Virtual Machines
-https://cockpit-project.org/
-https://cockpit-project.org/guide/latest/feature-virtualmachines.html#feature-virtualmachines-systemaccess
-
-- How to Install a Kubernetes Cluster on CentOS 8
-https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
+- [How to Install a Kubernetes Cluster on CentOS 8](https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/)
 
