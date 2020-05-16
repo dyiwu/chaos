@@ -1,7 +1,7 @@
 ---
 title: "Talk: Frist Pass Linux Kernel Dump"
 date: 2014-07-24T15:14:34+08:00
-tags:  ["linux","kernel"]
+tags:  ["linux","linux-kernel"]
 categories: ["talk"]
 ---
 Kdump is a kernel crash dumping mechanism that allows you to save the contents of the system’s memory for later analysis. A kernel crash dump can be the only information available in the event of a failure, the importance of having this data in a business critical environment cannot be underestimated.
