@@ -1,5 +1,5 @@
 ---
-title: "K8s on Centos8 Home Lab"
+title: "K8s on Centos 8 Home Lab"
 date: 2020-05-15T14:39:39+08:00
 tags: ["homelab","k8s","centos8"]
 categories: ["tech"]
@@ -9,9 +9,10 @@ toc: true
 This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM guest nodes be form up as a k8s cluster.
 
 <!--more-->
-## Centos8 on bare metal
-### KVM host base environment
+## **Centos 8 on bare metal**
+### **KVM host base environment**
 - Select ***Workstation*** as base environment for this Centos8 VM host with following configuration. 
+
     - Intel(R) Core(TM) i7 CPU       Q 720  @ 1.60GHz
     - 8 GB memory
     - Disk partitions 
@@ -41,7 +42,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
     ```
 #### Reference: [How to Install CentOS 8](https://linoxide.com/distros/how-to-install-centos/)
 
-### Enable Community Enterprise Linux Repository and extra packages
+### **Enable Community Enterprise Linux Repository and extra packages**
 
 - Download latest elrepo-release rpm from
     ```
@@ -58,7 +59,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
     # dnf --enablerepo=elrepo-extras install elrepo-release
     ```
 
-### Google Chrome Web Browser installation
+### **Google Chrome Web Browser installation**
 
 - Download the latest Chrome 64-bit .rpm package
     ```
@@ -86,7 +87,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
 
 #### Reference：[How to Install Google Chrome Web Browser on CentOS 8](https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-8/)
 
-### Repository list
+### **Repository list**
 - ***dnf repolist*** command can be used to list all enabled repositories. Provides more detailed information when -v option is used.
 
     ```
@@ -101,7 +102,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
 
     # dnf repolist -v
     ```
-### br0 Network Bridge creation
+### **br0 Network Bridge creation**
 - Check connections.
     ```
     $ sudo nmcli connection show 
@@ -174,7 +175,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
     ```
 #### Reference: [How To Create a Linux Network Bridge on RHEL 8 / CentOS 8](https://computingforgeeks.com/how-to-create-a-linux-network-bridge-on-rhel-centos-8/)
 
-### Install KVM
+### **Install KVM**
 In here, we will like to go through the steps to install the latest release of KVM hypervisor on Centos 8. This will include the installation of KVM management tools – libguestfs-tools.
 - Ensure host CPU has Intel VT or AMD-V Virtualization extensions
     ```
@@ -225,7 +226,7 @@ Install the virt-manager tool which allows us to manage Virtual Machines from a 
 
 #### Reference: [How To Install KVM on RHEL 8 / CentOS 8 Linux](https://computingforgeeks.com/how-to-install-kvm-on-rhel-8/)
 
-### Using ***libvirtd*** but don't want ***virbr0***
+### **Using libvirtd but don't want virbr0**
 On a Linux host server, the virtual network switch shows up as a network interface. The default one, created when the libvirt daemon is first installed and started, shows up as virbr0. It will act as a gateway for the VMs to route traffic. libvirtd will also insert iptables rules in iptable configuration for proper routing/natting of VM packets.
 
 If we don't want to use libvirtd service, we can stop the same which will remove all these network configurations from the system for virbr0 interface.
@@ -262,7 +263,7 @@ But in our case scenario, libvirtd service will be kept running regarding this b
     ```
 #### Reference: [How to Remove virbr0 and lxcbr0 Interfaces on CentOS/RHEL 6,7](https://www.thegeekdiary.com/how-to-remove-virbr0-and-lxcbr0-interfaces-on-centos-rhel-5-and-rhel-7/)
 
-### Enable xrdp service
+### **Enable xrdp service**
 Xrdp is an open-source implementation of the Microsoft Remote Desktop Protocol (RDP) that allows you to graphically control a remote system. With RDP, you can log in to the remote machine and create a real desktop session the same as if you had logged in to a local machine.
 
 - Installing Xrdp
@@ -336,7 +337,7 @@ Xrdp is an open-source implementation of the Microsoft Remote Desktop Protocol (
 
 #### Reference: [How to Install Xrdp Server (Remote Desktop) on CentOS 8](https://linuxize.com/post/how-to-install-xrdp-on-centos-8/)
 
-### Cockpit Web Console
+### **Cockpit Web Console**
 The Cockpit is a web console with an easy to use web-based interface that enables you to carry out administrative tasks on your servers. Also being a web console, it means you can also access it through a mobile device as well.
 
 - Installing Cockpit Web Console
