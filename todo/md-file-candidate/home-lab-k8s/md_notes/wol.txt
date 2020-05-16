@@ -1,0 +1,3 @@
+https://blog.yucas.mx/2018/02/03/add-systemd-service-to-start-wake-on-lan/
+
+wake on lan service
