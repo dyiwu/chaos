@@ -3,6 +3,7 @@ title: "Marvell Yukon 2 Gigabit Ethernet driver on Centos 8.1"
 date: 2020-05-16T18:02:35+08:00
 tags: ["centos8","linux-kernel"]
 categories: ["tech"]
+lastmod: 2020-05-16T18:02:35+08:00
 ---
 
 <!--more-->
