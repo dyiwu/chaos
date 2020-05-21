@@ -1,4 +1,0 @@
-xfreerdp /w:1900 /v:MyDNSServername /relax-order-checks +glyph-cache
-
-Remmnia (Remote Desktop Client) profile option
-enable relax-order-checks and glyph-cache option in profile's advanced tab.

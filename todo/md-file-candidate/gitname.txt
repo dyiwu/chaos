@@ -1,8 +1,8 @@
 How to save username and password in git [GitExtension]?
 
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "Your Name"
+$ git config --global credential.helper store
 
 [dyiwu@pb6440b ~]$ cat ~/.gitconfig
 [user]
@@ -10,5 +10,4 @@ How to save username and password in git [GitExtension]?
         name = dyiwu
 [credential]
         helper = store
-[dyiwu@pb6440b ~]$ git config --global credential.helper store
 
