@@ -1,0 +1,6 @@
+$ sudo apt install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4
+$ im-config -s ibus
+$ sudo apt install ibus-pinyin
+
+Terminator installation
+$ sudo apt-get install terminator
