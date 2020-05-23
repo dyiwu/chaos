@@ -1,5 +1,5 @@
 ---
-title: "K8s on Centos 8 Home Lab"
+title: "Home Lab - K8s on Centos 8"
 date: 2020-05-15T14:39:39+08:00
 tags: ["homelab","k8s","centos8"]
 categories: ["tech"]
