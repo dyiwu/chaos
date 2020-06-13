@@ -1,6 +1,6 @@
 ---
 title: "Home Lab - K8s on Centos 8"
-date: 2020-05-15T14:39:39+08:00
+date: 2020-06-13T14:39:39+08:00
 tags: ["homelab","k8s","centos8"]
 categories: ["tech"]
 toc: true
@@ -377,6 +377,24 @@ The Cockpit is a web console with an easy to use web-based interface that enable
     The console calls a certificate from the /etc/cockpit/ws-certs.d directory and uses the .cert extension file. To avoid having to prompt security warnings, install a certificate signed by a certificate authority (CA).
 
     In the web console login screen, enter your system user name and password.
+
+### **Chinese PinYin Input method**
+- Locate the ibus pinyin package.
+    ```
+    # dnf search ibus*
+    ```
+- Install ibus-libpinyin.x86_64 package
+    ```
+    # dnf install ibus-libpinyin.x86_64
+    ```
+
+- Install ibus-libzhuyin.x86_64 package optional.
+   ```
+   # dnf install ibus-libzhuyin.x86_64
+   ```
+- Reboot system after package installed.
+
+- Now, going to the Settings —> Region & Language —> Input Sources, click the add botton to have chinese input method.
 
 #### Reference:
 - [How to Install Cockpit Web Console in CentOS 8](https://www.tecmint.com/install-cockpit-web-console-in-centos-8/)
