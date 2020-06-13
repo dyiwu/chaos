@@ -1,16 +1,15 @@
 ---
-title: "Home Lab - K8s on Centos 8"
+title: "Home Lab - K8s on Centos 8 - VM host"
 date: 2020-06-13T14:39:39+08:00
 tags: ["homelab","k8s","centos8"]
 categories: ["tech"]
 toc: true
 
 ---
-This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM guest nodes be form up as a k8s cluster.
+This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM guest nodes be form up as a k8s cluster. The first step is going to craete the  KVM host on the bare metal.
 
 <!--more-->
-## **Centos 8 on bare metal**
-### **KVM host base environment**
+### **VM host base environment**
 - Select ***Workstation*** as base environment for this Centos8 VM host with following configuration. 
 
     - Intel(R) Core(TM) i7 CPU       Q 720  @ 1.60GHz
@@ -59,7 +58,22 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
     # dnf --enablerepo=elrepo-extras install elrepo-release
     ```
 
-### **Google Chrome Web Browser installation**
+### **Repository list**
+- ***dnf repolist*** command can be used to list all enabled repositories. Provides more detailed information when -v option is used.
+
+    ```
+    # dnf repolist
+    Last metadata expiration check: 0:17:47 ago on Sat 16 May 2020 12:06:02 PM CST.
+    repo id                repo name                                                        status
+    AppStream              CentOS-8 - AppStream                                             5,318
+    BaseOS                 CentOS-8 - Base                                                  1,661
+    elrepo                 ELRepo.org Community Enterprise Linux Repository - el8              90
+    extras                 CentOS-8 - Extras                                                   16
+    google-chrome          google-chrome      
+
+    # dnf repolist -v
+    ```
+### **Google Chrome**
 
 - Download the latest Chrome 64-bit .rpm package
     ```
@@ -87,22 +101,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
 
 #### Reference：[How to Install Google Chrome Web Browser on CentOS 8](https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-8/)
 
-### **Repository list**
-- ***dnf repolist*** command can be used to list all enabled repositories. Provides more detailed information when -v option is used.
-
-    ```
-    # dnf repolist
-    Last metadata expiration check: 0:17:47 ago on Sat 16 May 2020 12:06:02 PM CST.
-    repo id                repo name                                                        status
-    AppStream              CentOS-8 - AppStream                                             5,318
-    BaseOS                 CentOS-8 - Base                                                  1,661
-    elrepo                 ELRepo.org Community Enterprise Linux Repository - el8              90
-    extras                 CentOS-8 - Extras                                                   16
-    google-chrome          google-chrome      
-
-    # dnf repolist -v
-    ```
-### **br0 Network Bridge creation**
+### **br0 Network Bridge**
 - Check connections.
     ```
     $ sudo nmcli connection show 
@@ -263,7 +262,7 @@ But in our case scenario, libvirtd service will be kept running regarding this b
     ```
 #### Reference: [How to Remove virbr0 and lxcbr0 Interfaces on CentOS/RHEL 6,7](https://www.thegeekdiary.com/how-to-remove-virbr0-and-lxcbr0-interfaces-on-centos-rhel-5-and-rhel-7/)
 
-### **Enable xrdp service**
+### **Xrdp service**
 Xrdp is an open-source implementation of the Microsoft Remote Desktop Protocol (RDP) that allows you to graphically control a remote system. With RDP, you can log in to the remote machine and create a real desktop session the same as if you had logged in to a local machine.
 
 - Installing Xrdp
@@ -337,7 +336,7 @@ Xrdp is an open-source implementation of the Microsoft Remote Desktop Protocol (
 
 #### Reference: [How to Install Xrdp Server (Remote Desktop) on CentOS 8](https://linuxize.com/post/how-to-install-xrdp-on-centos-8/)
 
-### **Cockpit Web Console**
+### **Cockpit**
 The Cockpit is a web console with an easy to use web-based interface that enables you to carry out administrative tasks on your servers. Also being a web console, it means you can also access it through a mobile device as well.
 
 - Installing Cockpit Web Console
@@ -378,7 +377,12 @@ The Cockpit is a web console with an easy to use web-based interface that enable
 
     In the web console login screen, enter your system user name and password.
 
-### **Chinese PinYin Input method**
+#### Reference:
+- [How to Install Cockpit Web Console in CentOS 8](https://www.tecmint.com/install-cockpit-web-console-in-centos-8/)
+- [cockpit project](https://cockpit-project.org/)
+- [cockpit with Virtual Machines](https://cockpit-project.org/guide/latest/feature-virtualmachines.html#feature-virtualmachines-systemaccess)
+
+### **Chinese input method**
 - Locate the ibus pinyin package.
     ```
     # dnf search ibus*
@@ -396,16 +400,9 @@ The Cockpit is a web console with an easy to use web-based interface that enable
 
 - Now, going to the Settings —> Region & Language —> Input Sources, click the add botton to have chinese input method.
 
-#### Reference:
-- [How to Install Cockpit Web Console in CentOS 8](https://www.tecmint.com/install-cockpit-web-console-in-centos-8/)
-- [cockpit project](https://cockpit-project.org/)
-- [cockpit with Virtual Machines](https://cockpit-project.org/guide/latest/feature-virtualmachines.html#feature-virtualmachines-systemaccess)
-
 -------
 
 - [virsh commands cheatsheet to manage KVM guest virtual machines](https://computingforgeeks.com/virsh-commands-cheatsheet/)
 
 - [How to Install a Kubernetes Cluster on CentOS 8](https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/)
-
-
 
