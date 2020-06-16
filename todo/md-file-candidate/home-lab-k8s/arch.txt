@@ -1,0 +1,28 @@
+On this home lab, we will run through the process of installing Kubernetes on a CentOS 8 platform, running on Docker-CE (Community Edition).
+
+- Three nodes, one master node and two worker nodes, run CentOS 8.
+- 2 CPUs with 2GB RAM for each node. This is not a strict requirement but is largely driven by the needs of the running applications.
+- Internet connectivity on all nodes. Kubernetes and docker packages will be fetched from the repository. The DNF package manager should be installed by default and can fetch packages remotely.
+- All nodes should also be able to connect to one another, either on a private or public network, whichever is available.
+- An account with sudo or root privileges is required.
+
+Precaution
+Most nodes generally come with unique MAC addresses, however, in some unique cases, some Virtual Machines may have identical MAC addresses. It is therefore recommended that you confirm that the Product_UUID and the MAC address are not identical in any of the nodes.
+
+Kubernetes uses these values to uniquely identify the nodes in the cluster. If these values are not unique to each node, the installation process may fail.
+
+To check the MAC address of the network interface and compare it.
+
+# ip link
+To check the product_uuid and compare, run the following command.
+
+# cat /sys/class/dmi/id/product_uuid 
+
+Logical Architecture
+Our installation is designed to have the Master-Node controlling the Worker Nodes. At the end of this installation, our logical architecture will look something like this.
+
+Master Node – This machine generally acts as the control plane and runs the cluster database and the API server (which the kubectl CLI communicates with).
+
+Our 3-node Kubernetes Cluster will look something like this:
+
+

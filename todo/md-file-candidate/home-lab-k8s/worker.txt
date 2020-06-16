@@ -1,0 +1,70 @@
+Step 1: Prepare Hostname, Firewall, and SELinux
+First set the hostname on your worker-node-1 and worker-node-2, and then add the host entries to the /etc/hosts file.
+
+# hostnamectl set-hostname 'node-1'
+# cat <<EOF>> /etc/hosts
+192.168.0.47 master-node
+192.168.0.48 node-1 worker-node-1
+192.168.0.49 node-2 worker-node-2
+EOF
+
+Next, ping your master node from your worker nodes to confirm that your updated host file is working fine using the ping command.
+
+# 192.168.0.47
+Next, disable SElinux and update your firewall rules.
+# setenforce 0
+# sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
+# firewall-cmd --permanent --add-port=6783/tcp
+# firewall-cmd --permanent --add-port=10250/tcp
+# firewall-cmd --permanent --add-port=10255/tcp
+# firewall-cmd --permanent --add-port=30000-32767/tcp
+# firewall-cmd  --reload
+# echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
+Step 2: Setup Docker-CE and Kubernetes Repo
+Add the Docker repository first using DNF config-manager.
+
+# dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+Next, add the containerd.io package.
+# dnf install https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+With these two packages installed, install the latest version of docker-ce.
+
+# dnf install docker-ce
+
+Enable and start the docker service.
+
+# systemctl enable docker
+# systemctl start docker
+You will need to add Kubernetes repositories manually as they do not come pre-installed on CentOS 8.
+# cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+Step 3: Install Kubeadm on CentOS 8
+With the package repo now ready, you can go ahead and install kubeadm.
+
+# dnf install kubeadm -y 
+Start and enable the service.
+# systemctl enable kubelet
+# systemctl start kubelet
+Step 4: Join the Worker Node to the Kubernetes Cluster
+We now require the token that kubeadm init generated, to join the cluster. You can copy and paste it to your node-1 and node-2 if you had copied it somewhere.
+
+# kubeadm join 192.168.0.47:6443 --token nu06lu.xrsux0ss0ixtnms5  --discovery-token-ca-cert-hash sha256:f996ea35r4353d342fdea2997a1cf8caeddafd6d4360d606dbc82314683478hjmf78
+As suggested on the last line, go back to your master-node and verify if worker node-1 and worker node-2 have joined the cluster using the following command.
+
+# kubectl get nodes
+
+If all the steps run successfully, then, you should see node-1 and node-2 in ready status on the master-node. At this point, you have now successfully deployed a Kubernetes cluster on CentOS 8.
+Some Limitations
+The cluster we have created here has a single Master node, and as such, if the Master node fails, your cluster may lose data and may need to be recreated from scratch.
+
+For this reason, I recommend a Highly Available setup.
+
+Sharing is Caring...
+#### Reference: https://www.tecmint.com/install-a-kubernetes-cluster-on-centos-8/
