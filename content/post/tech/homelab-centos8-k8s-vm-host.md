@@ -1,16 +1,16 @@
 ---
 title: "Home Lab - K8s on Centos 8 - VM host"
-date: 2020-06-13T14:39:39+08:00
+date: 2020-06-18T21:22:39+08:00
 tags: ["homelab","k8s","centos8"]
 categories: ["tech"]
 toc: true
 
 ---
-This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM guest nodes be form up as a k8s cluster. The first step is going to craete the  KVM host on the bare metal.
+This home lab is going to build a CentOS 8 VM host on bare matel and 3 VM guest nodes be form up as a k8s cluster. The first step is going to craete the VM host on the bare metal.
 
 <!--more-->
 ### **VM host base environment**
-- Select ***Workstation*** as base environment for this Centos8 VM host with following configuration. 
+- Select ***Server with GUI*** as base environment for this Centos 8 VM host with following configuration. 
 
     - Intel(R) Core(TM) i7 CPU       Q 720  @ 1.60GHz
     - 8 GB memory
@@ -39,18 +39,34 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
     /dev/sda2               partition       16777212        0       -2
 
     ```
+    - Anaconda packages
+    ```
+    %packages
+    @^graphical-server-environment
+    @development
+    @graphical-admin-tools
+    @headless-management
+    @remote-system-management
+    @system-tools
+    @virtualization-client
+    @virtualization-hypervisor
+    @virtualization-tools
+
+    %end
+    ```
+ 
 #### Reference: [How to Install CentOS 8](https://linoxide.com/distros/how-to-install-centos/)
 
 ### **Enable Community Enterprise Linux Repository and extra packages**
 
 - Download latest elrepo-release rpm from
     ```
-    # wget https://mirror.rackspace.com/elrepo/extras/el8/x86_64/RPMS/elrepo-release-8.1-1.el8.elrepo.noarch.rpm
+    # wget https://mirror.rackspace.com/elrepo/extras/el8/x86_64/RPMS/elrepo-release-8.2-1.el8.elrepo.noarch.rpm
     ```
 
 - Install elrepo-release rpm
     ```
-    # rpm -Uvh elrepo-release-8.1-1.el8.elrepo.noarch.rpm
+    # rpm -Uvh elrepo-release-8.2-1.el8.elrepo.noarch.rpm
     ```
 
 - Install elrepo-release rpm package:
@@ -101,7 +117,7 @@ This home lab is going to build a CentOS 8 KVM host on bare matel and then 3 KVM
 
 #### Reference：[How to Install Google Chrome Web Browser on CentOS 8](https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-8/)
 
-### **br0 Network Bridge**
+### **br0 Network Bridge** (optional)
 - Check connections.
     ```
     $ sudo nmcli connection show 
@@ -225,7 +241,7 @@ Install the virt-manager tool which allows us to manage Virtual Machines from a 
 
 #### Reference: [How To Install KVM on RHEL 8 / CentOS 8 Linux](https://computingforgeeks.com/how-to-install-kvm-on-rhel-8/)
 
-### **Using libvirtd but don't want virbr0**
+### **Using libvirtd but don't want virbr0** (optional)
 On a Linux host server, the virtual network switch shows up as a network interface. The default one, created when the libvirt daemon is first installed and started, shows up as virbr0. It will act as a gateway for the VMs to route traffic. libvirtd will also insert iptables rules in iptable configuration for proper routing/natting of VM packets.
 
 If we don't want to use libvirtd service, we can stop the same which will remove all these network configurations from the system for virbr0 interface.
