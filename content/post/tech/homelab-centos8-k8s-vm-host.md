@@ -416,6 +416,18 @@ The Cockpit is a web console with an easy to use web-based interface that enable
 
 - Now, going to the Settings —> Region & Language —> Input Sources, click the add botton to have chinese input method.
 
+### **Lid close event handler**
+By default, closing lid will suspend laptop. Set HandleLidSwitch and HandleLidSwitchDocked to "ignore" in /etc/systemd/logind.conf to ignore the lid closing event.
+
+```
+$ sudo vi /etc/systemd/logind.conf
+
+HandleLidSwitch=ignore        <---- Set both of these
+HandleLidSwitchDocked=ignore  <---- to ignore lid events.
+
+$ sudo systemctl restart systemd-logind
+```
+
 -------
 
 - [virsh commands cheatsheet to manage KVM guest virtual machines](https://computingforgeeks.com/virsh-commands-cheatsheet/)

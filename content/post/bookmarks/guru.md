@@ -13,3 +13,4 @@ categories = ["bookmark"]
 - [G. T. Wang 的個人部落格](https://blog.gtwang.org/)
 - [天花板隨記](https://atceiling.blogspot.com/)
 - [nixCraft](https://www.cyberciti.biz/)
+- [JIN-YANG 碼農的自留地](https://jin-yang.github.io/)
