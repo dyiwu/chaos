@@ -1,6 +1,6 @@
 +++
 title = "大腕、網紅"
-date = 2019-05-02T17:34:39+08:00
+date = 2020-06-22T21:16:28+08:00
 
 tags = ["guru","bookmark"]
 categories = ["bookmark"]
@@ -14,3 +14,4 @@ categories = ["bookmark"]
 - [天花板隨記](https://atceiling.blogspot.com/)
 - [nixCraft](https://www.cyberciti.biz/)
 - [JIN-YANG 碼農的自留地](https://jin-yang.github.io/)
+- [nixCraft](https://www.cyberciti.biz/)
