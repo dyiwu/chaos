@@ -1,7 +1,5 @@
-Installation of Kubernetes Cluster on Master-Node
-For Kubernetes to work, you will need a containerization engine. As mentioned, we will be using Docker-CE.
-
-The following institutions will be performed on CentOS 8 Master-Node.
+Installation of Kubernetes Cluster on Main-Node
+For Kubernetes to work, A containerization engine is required. Docker-CE will be used here.  The following institutions will be performed on CentOS 8 Main-Node.
 
 Step 1: Prepare Hostname, Firewall, and SELinux
 On your CentOS 8 Master-Node, set the system hostname and update DNS in your /etc/hosts file.
