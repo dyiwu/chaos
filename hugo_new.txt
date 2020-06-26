@@ -1,1 +1,1 @@
-hugo new post/bbb.md
+hugo new post/tech/bbb.md
