@@ -6,7 +6,7 @@ hugo
 # Go To Public folder
 cd public
 # Add changes to git.
-git add -A
+git add --all
 # Commit changes.
 msg="rebuilding site `date`"
 if [ $# -eq 1 ]
