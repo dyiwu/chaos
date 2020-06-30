@@ -1,8 +1,7 @@
-baseURL = "https://dyiwu.github.io/"
 #baseURL = "http://example.org/"
 #languageCode = "en-us"
 #title = "My New Hugo Site"
-baseURL = "https://example.com"
+baseURL = "https://dyiwu.github.io/"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
 defaultContentLanguage = "en"
