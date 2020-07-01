@@ -52,10 +52,10 @@ enableEmoji = true
         pre = ""
         # you can add extra information after the name (HTML format is supported), such as icons
         post = ""
-        name = "Posts"
+        name = "Archives"
         url = "/posts/"
         # title will be shown when you hover on this menu link.
-        title = ""
+        title = "All Posts"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "tags"
@@ -120,7 +120,7 @@ enableEmoji = true
         rss = 10
         # Home page profile
         [languages.en.params.home.profile]
-          enable = true
+          enable = false
           # Gravatar Email for preferred avatar in home page
           gravatarEmail = ""
           # URL of avatar shown in home page
