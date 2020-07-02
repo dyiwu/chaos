@@ -14,7 +14,7 @@ resources:
   src: "featured-image-preview.jpg"
 
 tags: ["shortcodes"]
-categories: ["Theme Doc"]
+categories: ["Theme Document"]
 
 lightgallery: true
 ---

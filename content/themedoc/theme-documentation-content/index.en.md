@@ -11,8 +11,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.jpg"
 
-tags: ["content", "Markdown"]
-categories: ["Theme Doc"]
+tags: ["content", "markdown"]
+categories: ["Theme Document"]
 
 lightgallery: true
 

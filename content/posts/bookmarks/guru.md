@@ -1,12 +1,11 @@
 +++
-title = "大腕、網紅"
+title = "Guru - 大腕、網紅"
 date = 2020-02-12T21:01:28+08:00
 lastmod = 2020-06-29T21:01:28+08:00
-author = "Dyi-Wu"
 tags = ["guru","bookmark"]
 categories = ["bookmark"]
 +++
-大腕、網紅的網站。
+Guru - 大腕、網紅的網站。
 <!--more-->
 - [零壹軒筆記](https://note.qidong.name/)
 - [宋淨超的博客-雲原生](https://jimmysong.io/)

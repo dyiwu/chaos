@@ -12,7 +12,7 @@ resources:
   src: "featured-image.png"
 
 tags: ["shortcodes"]
-categories: ["Theme Doc"]
+categories: ["Theme Document"]
 
 lightgallery: true
 ---

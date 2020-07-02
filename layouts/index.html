@@ -21,7 +21,7 @@
         {{- /* Posts */ -}}
         {{- if ne $posts.enable false | and .Site.RegularPages -}}
             {{- /* Paginate */ -}}
-            {{- $pages := where .Site.RegularPages "Type" "post" -}}
+            {{- $pages := where .Site.RegularPages "Type" "posts" -}}
             {{- if .Site.Params.page.hiddenFromHomePage -}}
                 {{- $pages = where $pages "Params.hiddenfromhomepage" false -}}
             {{- else -}}
@@ -32,7 +32,7 @@
             {{- else -}}
                 {{- $pages = .Paginate $pages -}}
             {{- end -}}
-            {{- range $pages.Pages -}}
+            {{- range $pages.Pages.ByLastmod.Reverse -}}
                 {{- .Render "summary" -}}
             {{- end -}}
             {{- partial "paginator.html" . -}}

@@ -1,6 +1,6 @@
 ---
 weight: 5
-title: "Theme Documentation - Emoji Support"
+title: "Theme Documentation -  Emoji Support"
 date: 2019-10-01T17:55:28+08:00
 lastmod: 2019-10-01T17:55:28+08:00
 draft: false
@@ -11,8 +11,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.jpg"
 
-tags: [Markdown","emoji"]
-categories: ["Theme Doc"]
+tags: ["markdown", "emoji"]
+categories: ["Theme Document"]
 
 lightgallery: true
 ---
