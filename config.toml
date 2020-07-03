@@ -49,7 +49,7 @@ enableEmoji = true
         url = "/posts/"
         # title will be shown when you hover on this menu link.
         title = "All Posts"
-        weight = 1
+        weight = 3
       [[languages.en.menu.main]]
         identifier = "tags"
         pre = ""
@@ -65,7 +65,15 @@ enableEmoji = true
         name = "Categories"
         url = "/categories/"
         title = ""
-        weight = 3
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "About"
+        url = "/about/"
+        title = "About Chaos"
+        weight = 4
 
     [languages.en.params]
       # site description

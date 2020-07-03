@@ -1,8 +1,6 @@
 ---
-title: "About"
+title: "About Chaos"
 date: 2020-05-12T02:38:52+08:00
-menu: "main"
-weight: 50
 ---
 ### ***一個老碼農的筆記***  
 <div class="container">
@@ -23,8 +21,8 @@ weight: 50
 .text-block {
   position: absolute;
   top: 5px;
-  left: 10px;
-  color: navy;
+  left: 40px;
+  color: orange;
 }
 </style>
 
