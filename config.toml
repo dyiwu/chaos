@@ -11,7 +11,7 @@ theme = "LoveIt"
 
 # website title
 # title = "LoveIt"
-title = "Chaos - 一個老碼農的筆記"
+title = "Chaos - 老碼農的筆記"
 
 disablePathToLower = true
 
@@ -238,7 +238,7 @@ enableEmoji = true
       # LOGO 的 URL
       logo = ""
       # title name
-      name = "Chaos - 一個老碼農的筆記"
+      name = "Chaos - 老碼農的筆記"
       # you can add extra information before the name (HTML format is supported), such as icons
       #pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
       pre = ""

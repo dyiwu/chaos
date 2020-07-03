@@ -2,7 +2,7 @@
 title: "About Chaos"
 date: 2020-05-12T02:38:52+08:00
 ---
-### ***一個老碼農的筆記***  
+### ***老碼農的筆記***  
 <div class="container">
   <img src="alone_800x500.jpg" style="width:100%">
   <div class="text-block">
@@ -21,8 +21,8 @@ date: 2020-05-12T02:38:52+08:00
 .text-block {
   position: absolute;
   top: 5px;
-  left: 40px;
-  color: orange;
+  left: 30px;
+  color: navy;
 }
 </style>
 
