@@ -1,5 +1,6 @@
 ---
 title: "Static IP assignment for KVM guest"
+date: 2020-06-23T20:14:34+08:00
 lastmod: 2020-06-23T20:14:34+08:00
 tags: ["kvm","dhcp"]
 categories: ["tech"]

@@ -1,5 +1,6 @@
 ---
 title: "Clone KVM"
+date: 2020-06-24T20:49:27+08:00
 lastmod: 2020-06-24T20:49:27+08:00
 tags: ["kvm","clone"]
 categories: ["tech"]
