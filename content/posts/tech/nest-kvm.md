@@ -6,7 +6,8 @@ tags: ["kvm"]
 categories: ["tech"]
 autoCollapseToc: true
 ---
-Nested virtualization allows you to run a virtual machine (VM) inside another VM while still using hardware acceleration from the host.
+Nested virtualization allows you to run a virtual machine (VM) inside another VM
+ while still using hardware acceleration from the host.
 <!--more-->
 
 ## Checking if nested virtualization is supported

@@ -4,7 +4,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 tags: ["心靈雞湯","食衣住行"]
 categories: ["life"]
-author: "Dyi-Wu"
+author: "dyiwu"
 draft: false
 ---
 
