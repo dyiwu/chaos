@@ -1,0 +1,30 @@
+$ sudo apt list | grep open-vm-tools
+open-vm-tools-desktop/focal-updates,now 2:11.1.5-1~ubuntu20.04.2 amd64 [installed]
+open-vm-tools/focal-updates,now 2:11.1.5-1~ubuntu20.04.2 amd64 [installed]
+
+$ sudo systemctl status vmtoolsd.service
+
+● open-vm-tools.service - Service for virtual machines hosted on VMware
+     Loaded: loaded (/lib/systemd/system/open-vm-tools.service; enabled; vendor preset: enabled)
+    Drop-In: /lib/systemd/system/open-vm-tools.service.d
+             └─desktop.conf
+     Active: active (running) since Fri 2020-10-23 20:40:47 CST; 21min ago
+       Docs: http://open-vm-tools.sourceforge.net/about.php
+    Process: 643 ExecStartPre=/sbin/modprobe vmwgfx (code=exited, status=0/SUCCESS)
+   Main PID: 656 (vmtoolsd)
+      Tasks: 2 (limit: 4582)
+     Memory: 4.7M
+     CGroup: /system.slice/open-vm-tools.service
+             └─656 /usr/bin/vmtoolsd
+
+Oct 23 20:40:47 chaos systemd[1]: Starting Service for virtual machines hosted on VMware...
+Oct 23 20:40:47 chaos systemd[1]: Started Service for virtual machines hosted on VMware.
+
+$ sudo systemctl start vmtoolsd.service
+$ sudo systemctl enable vmtoolsd.service
+
+$ grep hgfs /etc/fstab
+.host:/ /mnt/hgfs fuse.vmhgfs-fuse allow_other 0 0
+
+$ df | grep hgfs
+vmhgfs-fuse    1953512444 1683562336 269950108  87% /mnt/hgfs
