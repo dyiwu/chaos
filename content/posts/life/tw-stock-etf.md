@@ -1,6 +1,7 @@
 ---
 title: "ETF 筆記"
 date: 2020-02-12T14:42:05+08:00
+lastmod: 2020-10-29T14:53:05+08:00
 tags: ["財經"]
 categories: ["life"]
 
@@ -67,3 +68,6 @@ categories: ["life"]
 1. 專注追蹤大盤指數就好，不要追求報酬率。
 2. 槓反型ETF不碰、商品型ETF不碰、看不懂的ETF不碰。
 3. 買可配息的ETF。
+
+### 基本市況報導網站
+- [證交所ETF發行單位變動及淨值揭露專區](https://mis.twse.com.tw/stock/etf_nav.jsp?ex=tse)
