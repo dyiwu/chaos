@@ -84,6 +84,15 @@ useradd -m -u 9009 -g 8888 -c "Dyi-Wu Liu,," -s /bin/bash -G adm,cdrom,sudo,dip,
 
 ---
 
+### Evolution
+```
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install evolution
+```
+
+---
+
 ### fonts
 
 #### Reference:
