@@ -3,7 +3,7 @@ title: "Install Linux Mint 20.1 Ulyssa Cinnamon"
 date: 2021-01-06T18:33:30+08:00
 lastmod: 2021-01-08T15:12:30+08:00
 draft: false
-tags: ["mint", "setup"]
+tags: ["mint", "setup", "homelab"]
 categories: ["tech"]
 toc: true
 ---
