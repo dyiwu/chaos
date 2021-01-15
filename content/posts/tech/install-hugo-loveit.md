@@ -1,8 +1,9 @@
 ---
 title: "Install Hugo with LoveIt theme"
 date: 2021-01-14T08:53:00+08:00
+lastmod: 2021-01-15T18:22:30+08:00
 draft: false
-tags: ["hugo", "loveit", "setup"]
+tags: ["hugo", "loveit", "setup", "homelab"]
 categories: ["tech"]
 ---
 Hugo with LoveIt theme installation
@@ -224,5 +225,6 @@ adjust the themesDir in config.toml to themes
 
 If you want to use a logo, you must place the logo.png in the assets/images directory. Use logo = "/images/logo.png" in the config file
 
-```
 In case you want to remove a language you must remove all content files for that language firstly
+```
+
