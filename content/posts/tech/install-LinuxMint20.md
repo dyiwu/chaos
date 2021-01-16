@@ -94,17 +94,17 @@ Reference:
 
 ### Google Chrome
 First, download the Google signing key and install it.
-```
-$ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+```bash
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 ```
 Set up the Google Chrome repository.
-```
-$ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+```bash
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 ```
 Update the repository index, install the stable version.
-```
-$ sudo apt-get update
-$ sudo apt-get  install -y google-chrome-stable
+```bash
+sudo apt-get update
+sudo apt-get install -y google-chrome-stable
 ```
 Reference:
 [How to Install Google Chrome in Linux Mint 20](https://linuxhint.com/install_google_chrome_linux_mint-2/)
