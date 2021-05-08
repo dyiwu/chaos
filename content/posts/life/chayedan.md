@@ -6,7 +6,7 @@ summary = ""
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["recipe","食"]
+tags = ["recipe","食譜","食"]
 categories = ["life"]
 
 # Featured image

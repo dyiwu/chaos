@@ -1,7 +1,7 @@
 ---
 title: "Sweet Potato - 電鍋烤地瓜"
 date: 2020-05-23T12:00:43+08:00
-tags: ["recipe","食"]
+tags: ["recipe","食","食譜"]
 categories: ["life"]
 ---
 ## 用電鍋烤地瓜的小技巧

@@ -4,7 +4,7 @@ date = 2020-02-16T11:45:18+08:00
 draft = false
 summary = ""
 
-tags = ["recipe","食"]
+tags = ["recipe","食","食譜"]
 categories = ["life"]
 
 +++
