@@ -1,7 +1,7 @@
 ---
 title: "Install Raspberry"
 date: 2020-05-21T19:53:30+08:00
-lastmod: 2020-10-15T14:28:30+08:00
+lastmod: 2021-06-09T14:04:30+08:00
 draft: false
 tags: ["raspberry", "setup"]
 categories: ["tech"]
@@ -99,6 +99,11 @@ $ df | grep DS420P
 //ds420p/video 7742705752 7561820676 180885076  98% /mnt/DS420P/video
 //ds420p/music 7742705752 7561820676 180885076  98% /mnt/DS420P/music
 //ds420p/photo 7742705752 7561820676 180885076  98% /mnt/DS420P/photo
+```
+
+### PulseAudio Volume Control
+```
+$ sudo apt install pavucontrol
 ```
 
 ### Pi 3B USB boot
