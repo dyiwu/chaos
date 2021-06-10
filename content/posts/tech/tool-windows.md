@@ -1,7 +1,7 @@
 ---
 title: "Commonly used tools in Windows"
 date: 2021-06-10T18:00:00+08:00
-lastmod: 2021-06-10T18:00:00+08:00
+lastmod: 2021-06-10T19:05:00+08:00
 draft: false
 tags: ["windows", "tool"]
 categories: ["tech"]
