@@ -1,7 +1,7 @@
 ---
 title: "投資型人壽保險 - Investment-Oriented Life Insurance"
 date: 2021-03-16T01:02:05+08:00
-lastmod: 2021-05-08T16:52:05+08:00
+lastmod: 2021-07-05T13:18:05+08:00
 tags: ["財經"]
 categories: ["life"]
 toc: true
@@ -14,8 +14,10 @@ toc: true
 ### 台灣人壽月月好鑫外幣變額年金保險 
 台灣人壽委託國泰投信投資帳戶-智能多元收益(美元)
 - 投資標的代碼 : M014
-- [基本資料、凈值資料、績效表現、撥回資產狀況](http://178.taiwanlife.com/T/TA/TA102.DJHTM?A=CTBCLIFE&B=M014&STD=)
+- [基本資料、凈值資料、績效表現、撥回資產狀況](https://www.taiwanlife.com/investment-target-infos?id=M014)
+
 - [月報](http://tfundwebtool.moneydj.com/tempfile/CTBCLIFE/TA101/M014/M014.pdf)
+- [投資子標的](https://178.taiwanlife.com/savefile/M014.pdf)
 - 資產撥回條件
    + 台灣人壽委託國泰投信投資帳戶-智能多元收益(美元)（本全權委託帳戶之資產撥回機制來源可能為本金）※
   1. 每月定期撥回：每月 10 日之投資標的符合下列條件時，則該月應進行資產撥回。
