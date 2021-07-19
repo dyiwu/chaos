@@ -1,7 +1,7 @@
 ---
 title: "Install Linux Mint 20.1 Ulyssa Cinnamon"
 date: 2021-01-06T18:33:30+08:00
-lastmod: 2021-06-14T22:12:30+08:00
+lastmod: 2021-07-19T22:19:50+08:00
 draft: false
 tags: ["mint", "setup", "homelab"]
 categories: ["tech"]
@@ -323,11 +323,23 @@ Install Typora
 ```
 sudo apt-get install typora
 ```
+### Pdfunite
+Pdfunite is a handy tool that can be used for merging to or more PDF documents. It is part of poppler-utils package, so install poppler utils, end up with pdfunite.
+
+To install pdfunite, we’ll install the poppler-utils package as shown
+```bash
+apt install poppler-utils
+```
+
+To merge the PDF documents, the syntax will be as shown
+```bash
+pdfunite file1.pdf file2.pdf merged_output.pdf
+```
 
 ### Reference:
 - [25 Things to Do After Installing Linux Mint 20 Ulyssa](https://averagelinuxuser.com/linuxmint20-after-install/)
 - [Important Things to Do After Installing Linux Mint 20](https://linuxhint.com/to_do_after_install-_linux_mint_20/)
 - [10 Things to Do First in Linux Mint 20.1 Cinnamon](https://easylinuxtipsproject.blogspot.com/p/first-mint-cinnamon.html)
 
-
+- [How to Merge PDF Files on Linux](https://linoxide.com/merge-pdf-files-linux/)
 

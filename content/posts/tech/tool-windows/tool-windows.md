@@ -1,7 +1,7 @@
 ---
 title: "Commonly used tools in Windows"
 date: 2021-06-10T18:00:00+08:00
-lastmod: 2021-06-14T23:05:00+08:00
+lastmod: 2021-07-19T19:45:00+08:00
 draft: false
 tags: ["windows", "tool"]
 categories: ["tech"]
@@ -36,3 +36,10 @@ Reference
 - [OpenShot.org](https://www.openshot.org/)
 - [OpenShot Video Editor 簡易教學](https://www.fox-saying.com/blog/post/44993064-openshot-video-editor)
 - [OpenShot Video Editor 的下載與安裝說明](https://blog.xuite.net/yh96301/blog/585788305)
+
+### PDF Merger & Splitter
+A third-party app to help on combining PDFs. A solid option in [PDF Merger & Splitter](https://click.linksynergy.com/deeplink?id=0JlRymcP1YU&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fp%2Fpdf-merger-splitter-free-pdf-splitter-to-extract-pdf-and-combine-pdf%2F9p4tcns9h432%3Factivetab%3Dpivot%3Aoverviewtab&u1=cn-663fd548ccf946209b901ef9c5a0cbda-dtp|xid:fr1626691493091bic) by [AnywaySoft](https://www.anywaysoft.com/). It's available through the Microsoft Store for free. 
+
+Reference
+
+- [Combine PDFs into one document on Windows and Mac for free.](https://www.cnet.com/tech/services-and-software/how-to-combine-multiple-pdfs-into-one-document/)
