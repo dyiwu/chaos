@@ -1,7 +1,7 @@
 ---
 title: "Install Linux Mint 20.1 Ulyssa Cinnamon"
 date: 2021-01-06T18:33:30+08:00
-lastmod: 2021-07-19T22:19:50+08:00
+lastmod: 2021-08-15T18:19:50+08:00
 draft: false
 tags: ["mint", "setup", "homelab"]
 categories: ["tech"]
@@ -135,6 +135,9 @@ To set ibus as preference by adding these environment variables into ~/.bashrc .
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
+export QT4_IM_MODULE=ibus
+export CLUTTER_IM_MODULE=ibus
+
 ```
 ---
 
