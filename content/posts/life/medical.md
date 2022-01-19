@@ -1,7 +1,7 @@
 ---
 title: "Medical - 醫療"
 date: 2022-01-15T21:20:00+08:00
-lastmod: 2022-01-16T16:49:18+08:00
+lastmod: 2022-01-19T21:59:18+08:00
 tags: ["醫療"]
 categories: ["life"]
 ---
